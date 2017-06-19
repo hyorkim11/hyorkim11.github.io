@@ -1,11 +1,27 @@
+=====HOME=====
+
+
+=====WORKS=====
 Design
+- design processes (4 STEPS)
 
-- UXDC/fyd project
-	- platform
+	- projects
 
-- University of Michigan-Institute of Social Research
-	- platform
+		- UXDC/fyd project
+			- platform
+
+		- University of Michigan-Institute of Social Research
+			- platform
+
+		- More to come...
+			- inquire
+
 
 Development
+- projects
+	- StepFor
+	- Mind the Moment
+	- CPU_Temp
+	- more to come...
 
-- 
+	
