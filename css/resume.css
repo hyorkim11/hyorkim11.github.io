@@ -112,3 +112,8 @@ a:hover, a:focus, a:active {
   color: #824027;
   cursor: pointer;
 }
+
+.school-logo {
+  width: 10%;
+  height: auto;
+}

@@ -122,5 +122,12 @@ a {
 	color: #0184BF
 }
 a:active, a:focus, a:hover {
-	color: #00B9E6
+	color: #00B9E6;
+	cursor: pointer;
 }
+
+.school-logo {
+  width: 100%;
+  height: auto;
+}
+
