@@ -131,3 +131,12 @@ a:active, a:focus, a:hover {
   height: auto;
 }
 
+.tiny {
+	width: 40%;
+	height: auto;
+}
+
+.medium {
+	width: 75%;
+	height: auto;
+}
