@@ -140,3 +140,7 @@ a:active, a:focus, a:hover {
 	width: 75%;
 	height: auto;
 }
+
+.black {
+	color: black;
+}
