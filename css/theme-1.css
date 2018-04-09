@@ -1,6 +1,8 @@
 .bg-primary {
-  background-color: #00769D !important;
-  /*#01a2a6*/
+  background-color: #FFFFFF !important;
+  /*#01a2a6
+  00769D
+  */
 }
 .bg-secondary-1 {
   background-color: #97B2EC !important;
@@ -46,7 +48,12 @@
   color: #fff;
 }
 .text-primary {
-  color: #01a2a6;
+  color: #000000;
+  /*01a2a6*/
+}
+
+.text-jet {
+  color: #131516;
 }
 .standard-radius {
   border-radius: 25px;
@@ -275,7 +282,8 @@ section.duplicatable-content {
   padding-bottom: 40px;
 }
 section:nth-of-type(odd) {
-  background: #f4f4f4;
+  background: #ffffff;
+  /*f4f4f4*/
 }
 section:nth-of-type(even) {
   background: #ffffff;
@@ -1541,6 +1549,9 @@ img.phone-portrait {
   margin-bottom: 40px;
 }
 .pure-text-centered h1 {
+  margin-bottom: 24px;
+}
+.pure-text-left h1 {
   margin-bottom: 24px;
 }
 .inline-image-right img {
@@ -3487,7 +3498,8 @@ footer.short-2 .contact-action:hover {
 }
 .skill-capacity {
   height: 12px;
-  background: #01a2a6;
+  background: #0F3EA3;
+
   padding: 0px !important;
   left: 0px;
   position: absolute;
@@ -3499,7 +3511,8 @@ footer.short-2 .contact-action:hover {
   background: rgba(47, 41, 51, 0.1);
 }
 .skills-left .skill-capacity {
-  background: #2f2933;
+  background: #0F3EA3;
+  /*2f2933*/
   left: auto;
   right: 0px;
 }
@@ -4244,8 +4257,20 @@ footer.short-2 .contact-action:hover {
   padding-bottom: 64px;
   margin-bottom: 32px;
 }
+/*
+
+ORIGINAL TIMELINE nth EVEN
 .timeline-event:nth-child(even) .col-sm-6:first-child {
   text-align: right;
+}*/
+.timeline-event:nth-child(even) .col-sm-6:first-child {
+  padding-left: 54px;
+  padding-right: 15px;
+}
+.timeline-event:nth-child(even) .col-sm-6:last-child {
+  padding-right: 54px;
+  text-align: left;
+  padding-left: 15px;
 }
 .timeline-event .col-sm-6:first-child {
   padding-right: 54px;
@@ -4259,7 +4284,7 @@ footer.short-2 .contact-action:hover {
 }
 .timeline-event:nth-child(odd) .col-sm-6:last-child {
   padding-right: 54px;
-  text-align: right;
+  text-align: left;
   padding-left: 15px;
 }
 .timeline-event .middle {
@@ -4274,14 +4299,15 @@ footer.short-2 .contact-action:hover {
   font-size: 40px;
   display: inline-block;
   margin-bottom: 16px;
-  color: #01a2a6;
+  padding: 1px;
+  color: #0F3EA3;
 }
 .timeline-event .middle .vertical-line {
   top: 60px;
   width: 2px;
   height: 100%;
   display: inline-block;
-  background: #01a2a6;
+  background: #0F3EA3;
   position: absolute;
   left: 50%;
   margin-left: -2px;
