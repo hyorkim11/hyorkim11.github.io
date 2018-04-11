@@ -119,7 +119,7 @@
     	<section class="projects-gallery">
     		<div class="container">
     			<div class="row">
-    				<div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 text-left">
+    				<div class="col-md-8 col-md-offset-1 col-sm-8 col-sm-offset-2 text-left">
     					<h1><b>Challenge</b></h1>
     					<p class="lead">Comparing multiple laptops at once is difficult, especially if you aren't familiar with technical jargon. How can we improve the usability of a laptop comparison tool to aid users in making their purchasing decisions?</p>
     				</div>
@@ -143,7 +143,7 @@
     					<h4><b>Minimalist designs with plenty of whitespace</b></h4>
     					<p class="lead">Best and the prettiest tools took advantage of whitespace and clean typefaces</p>
     				</div>
-    				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center"><img alt="analysis" src="img/comp_analysis.png"></div>
+    				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center align-vertical"><img alt="analysis" src="img/comp_analysis.png"></div>
     			</div>
     		</div>
     	</section>
@@ -161,8 +161,28 @@
     					<h4><b>“Consistency &amp; Standards”</b></h4>
     					<p class="lead">The tool would not be able to fill out every listing of the laptops' components. If the maker of these laptops don't have these tech-spec information regarding their products, where else can users go? In addition, there were visual highlighting done inconsistently throughout the tool's interfaces, which may mislead users.</p>
     				</div>
-    				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center">
+    				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center align-vertical">
     					<div id="HEval"></div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<section class="projects-gallery">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 text-left">
+    					<h1><b>Personas &amp; Journeys</b></h1>
+    					<p class="lead">After the preliminary research on the tool, the team created 3 personas of potential users that would dictate the team's design decisions going forward with designs. We came across an interesting problem where we initially thought that a user's technical expertise would directly correlate with his/her technical-requirement. Through user surveys and interviews, we found that wasn't the case at all.</p>
+    					<h3>Personas</h3><br>
+    					<h4><b>Low-Tech Requirement</b></h4>
+    					<p class="lead">The everyday casual users for streaming videos and drafting documents.</p>
+    					<h4><b>Medium-Tech Requirement</b></h4>
+    					<p class="lead">Students and people who need slightly faster and more powerful laptops for school, work, and multimedia purposes.</p>
+    					<h4><b>High-Tech Requirement</b></h4>
+    					<p class="lead">The professionals, gamers, and hobbyists that really need the rendering and multitasking power.</p>
+    				</div>
+    				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center align-vertical">
+    					<div id="Personas"></div>
     				</div>
     			</div>
     		</div>
@@ -182,21 +202,24 @@
     					<p class="lead">Users despise it when websites repeatedly prompt them to do something.</p>
     				</div>
     				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center"><img alt="prompt" src="img/prompt1.png"></div>
-    			</div><br>
+    			</div>
+    			<br>
     			<div class="row">
     				<div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 text-left">
     					<h4><b>"Pretty won't always work"</b></h4>
     					<p class="lead">Dell implemented a blue-bar rating system for a few components that looked clean; however, testers had trouble understanding the benchmarking system.</p>
     				</div>
     				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center"><img alt="prompt" src="img/prompt2.png"></div>
-    			</div><br>
+    			</div>
+    			<br>
     			<div class="row">
     				<div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 text-left">
     					<h4><b>"Split second first-impressions"</b></h4>
     					<p class="lead">According to <a href="https://www.tandfonline.com/doi/abs/10.1080/01449290500330448" target="none">research</a>, it takes 50 milliseconds for users to make a first-impression on a website. At the landing screen of the tool, there is nothing that users can relate to it visually.</p>
     				</div>
     				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center"><img alt="prompt" src="img/prompt3.png"></div>
-    			</div><br>
+    			</div>
+    			<br>
     			<div class="row">
     				<div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 text-left">
     					<h4><b>"Help users make a decision"</b></h4>
@@ -204,6 +227,7 @@
     				</div>
     				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center"><img alt="prompt" src="img/prompt4.png"></div>
     			</div>
+    			<br>
     			<div class="row">
     				<div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 text-left">
     					<h4><b>"Be careful with personas"</b></h4>
@@ -219,8 +243,8 @@
     					<h1><b>Prototyping</b></h1>
     					<p class="lead">With all the insights gathered in the previous stages, we began sketching and passing around ideas. Through a few rounds of iterations with feedbacks, I created a prototype for validation testing.</p>
     					<h3>Features designed from insight</h3><br>
-    					<h4><b>See the Differences(coming)</b></h4>
-    					<p class="lead">We are currently exploring more ways to visually indicate the differences between comparisons. Relying solely on colors may pose an accessibility issue to color-blind users.</p>
+    					<h4><b>See the Differences</b></h4>
+    					<p class="lead">We explored ways to visually indicate the differences between comparisons. Relying solely on colors may pose an accessibility issue to color-blind users.</p>
     					<h4><b>Relevant Information First</b></h4>
     					<p class="lead">We conducted many card sorting exercises and asked potential users to help us arrange the laptop components in the order of importance. They all showed a similar pattern depending on their intended use for the laptops: gaming, casual, school, and etc. We made these laptop-components features into different pre-set categories. No more endless scrolling!</p>
     					<h4><b>Clean Lists</b></h4>
@@ -228,14 +252,67 @@
     					<h4><b>Less Memorizing</b></h4>
     					<p class="lead">Good designs minimize the memory burden on the users, rarely relying on the users to memorize and recall information. The original tool lacked this ability–for instance, while scrolling down the long list of components, the columns-to-product relationship would be lost. No more memorizing which column belongs to which laptop!</p>
     				</div>
-    				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center">
+    				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center align-vertical">
     					<img alt="analysis" height="300" src="img/prototype.gif">
     				</div>
     			</div><br>
+    		</div>
+    	</section>
+    	<section class="projects-gallery">
+    		<div class="container">
     			<div class="row">
-    				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
-    					<h1><b>Where we are</b></h1>
-    					<p class="lead">We are currently going through the validation tests to make sure what we thought would work indeed works with users. Exciting times!</p>
+    				<div class="col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-2 text-left">
+    					<h1><b>Design Validation</b></h1>
+    					<p class="lead">With the above interactive prototype, we've conducted validation tests to see if our design had an impact on testers' performances.</p>
+    					<h3>Validation Test Design</h3><br>
+    					<h4>Within-Subject A/B Testing</h4>
+    					<p class="lead">Because we wanted to compare the performances of the testers on both designs (original and new), we conducted within-subject A/B tests. Every tester was required to go through a few hypothetical scenarios and complete a set of tasks, on both versions of the tool.</p>
+    					<h4>Data Collection</h4>
+    					<p class="lead">During each testing sessions, the team gathered both qualitative and quantitative data to benchmark the performances.</p>
+    					<h4>Quantitative Data</h4>
+    					<p class="lead">Task completion time, SUS Questionnaires, and click attempts.</p>
+    					<h4>Qualitative Data</h4>
+    					<p class="lead">User actions, thought processes, repetitive error patterns, first-impressions, emotional distress points, and pain-points.</p>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<section class="projects-gallery">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-2 text-left">
+    					<h1><b>Final Design</b></h1>
+    					<p class="lead">Through the validation test results, we've compiled and adjusted the features for our final design.</p>
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center">
+    					<img alt="prompt" src="img/comparison_tool.jpg">
+    				</div>
+    				<div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-2 text-left">
+    					<h3>Major Features</h3><br>
+    					<h4><b>2 Comparison at a Time</b></h4>
+    					<ul>
+    						<li>• Users often only compare between 2 laptops</li>
+    						<li>• Increase in white-space for enhanced readability</li>
+    						<li>• Greatly reduced amount of information displayed at once</li>
+    						<li>• Paved room for component highlighting feature</li>
+    					</ul>
+    					<h4><b>Component Highlighting</b></h4>
+    					<ul>
+    						<li>• Users appreciated visual feedback</li>
+    						<li>• Comparison done quick and easily</li>
+    					</ul>
+    					<h4><b>Comparison Mode Controller</b></h4>
+    					<ul>
+    						<li>• Empower users with little technical expertise to make confident decisions</li>
+    						<li>• Increase tool dependency by users</li>
+    					</ul>
+    					<h4><b>Relatable Descriptions</b></h4>
+    					<ul>
+    						<li>• Heightened relatability to component descriptions</li>
+    						<li>• Makes the tool more 'human'</li>
+    					</ul>
     				</div>
     			</div>
     		</div>
@@ -256,6 +333,7 @@
     		</div>
     		<script src="js/pdfobject.js"></script>
     		<script>PDFObject.embed("HEval_Dell.pdf", "#HEval");</script>
+    		<script>PDFObject.embed("personas.pdf", "#Personas");</script>
     		<script src="https://www.youtube.com/iframe_api">
     		</script> 
     		<script src="js/jquery.min.js">
