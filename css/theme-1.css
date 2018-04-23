@@ -2436,7 +2436,7 @@ input[type="submit"] {
   content: '';
   opacity: 0.9;
   z-index: 2;
-  background-color: #01a2a6;
+  background-color: #DAE6FF;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   transition: all .5s ease;
