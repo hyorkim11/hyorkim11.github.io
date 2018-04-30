@@ -82,6 +82,7 @@
 					<div class="col-sm-3 text-center">
 						<h2 class="text-white"><b>Client</b></h2>
 						<h3 class="text-white"><a class="text-white" href="http://datadrivendetroit.org/" target="none">Data Driven Detroit</a></h3>
+						<h3 class="text-white"><a class="text-white" href="https://seelio.com/w/3gob/data-driven-detroit-d3" target="none">Seelio Page</a></h3>
 					</div>
 					<div class="col-sm-3 text-center">
 						<h2 class="text-white"><b>Timeline</b></h2>
@@ -155,41 +156,34 @@
 			<div class="row">
 				<div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 text-left">
 					<h3>Findings</h3><br>
-					<h4><b>"Don't repeatedly prompt users"</b></h4>
-					<p class="lead">Users despise it when websites repeatedly prompt them to do something.</p>
+					<h4><b>"Follow Conventions"</b></h4>
+					<p class="lead">The map tool did not support conventional online map interactions, such as dragging and/or pinch-zooming, which confused users on how to navigate through the map tool.</p>
 				</div>
-				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center"><img alt="prompt" src="img/prompt1.png"></div>
+				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center"><img alt="prompt" src="img/asb_zoom.png"></div>
 			</div>
 			<br>
 			<div class="row">
 				<div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 text-left">
-					<h4><b>"Pretty won't always work"</b></h4>
-					<p class="lead">Dell implemented a blue-bar rating system for a few components that looked clean; however, testers had trouble understanding the benchmarking system.</p>
+					<h4><b>"Allow users to take it back"</b></h4>
+					<p class="lead">The map tool failed to offer users a simple and easy way to take back on their actions, do not leave users stranded after making a mistake!</p>
 				</div>
-				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center"><img alt="prompt" src="img/prompt2.png"></div>
+				<!-- <div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center"><img alt="prompt" src="img/prompt2.png"></div> -->
 			</div>
 			<br>
 			<div class="row">
 				<div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 text-left">
-					<h4><b>"Split second first-impressions"</b></h4>
-					<p class="lead">According to <a href="https://www.tandfonline.com/doi/abs/10.1080/01449290500330448" target="none">research</a>, it takes 50 milliseconds for users to make a first-impression on a website. At the landing screen of the tool, there is nothing that users can relate to it visually.</p>
+					<h4><b>"Information Hierarchy"</b></h4>
+					<p class="lead">The website in which the map tool existed contained a collection of helpful links on the right-hand side in a form of stacked-vertical navigation. This tool confused users of its disorganized hierarchy and relevance.</p>
 				</div>
-				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center"><img alt="prompt" src="img/prompt3.png"></div>
+				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center"><img alt="prompt" src="img/asb_menu.png"></div>
 			</div>
 			<br>
 			<div class="row">
 				<div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 text-left">
-					<h4><b>"Help users make a decision"</b></h4>
-					<p class="lead">Forcing users to make a decision by limiting their choices is one thing, but a comparison tool not helping the user compare? Testers wanted visual cues and patterns to make quick and easy decisions. Do you see anything on the left other than a wall of text?</p>
+					<h4><b>"Your users may be color blind!"</b></h4>
+					<p class="lead">Our team found that the color-coding of the map failed to pass the color blindness test, where the color coding may confuse and mislead color blind users. The image on the left-side is the original interface, and the right represents a view from a color blind user.</p>
 				</div>
-				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center"><img alt="prompt" src="img/prompt4.png"></div>
-			</div>
-			<br>
-			<div class="row">
-				<div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 text-left">
-					<h4><b>"Be careful with personas"</b></h4>
-					<p class="lead">When creating our personas, we thought users with high-technical requirements were always correlated with being a tech-savvy gamer. We found this to not be true at all, as we have overlooked gamers with little technical expertise and gamers that did not care for gaming on their laptops. </p>
-				</div>
+				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center"><img alt="prompt" src="img/asb_colorblind.png"></div>
 			</div>
 		</div>
 	</section>
@@ -197,20 +191,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 text-left">
-					<h1><b>Prototyping</b></h1>
-					<p class="lead">With all the insights gathered in the previous stages, we began sketching and passing around ideas. Through a few rounds of iterations with feedbacks, I created a prototype for validation testing.</p>
-					<h3>Features designed from insight</h3><br>
-					<h4><b>See the Differences</b></h4>
-					<p class="lead">We explored ways to visually indicate the differences between comparisons. Relying solely on colors may pose an accessibility issue to color-blind users.</p>
-					<h4><b>Relevant Information First</b></h4>
-					<p class="lead">We conducted many card sorting exercises and asked potential users to help us arrange the laptop components in the order of importance. They all showed a similar pattern depending on their intended use for the laptops: gaming, casual, school, and etc. We made these laptop-components features into different pre-set categories. No more endless scrolling!</p>
-					<h4><b>Clean Lists</b></h4>
-					<p class="lead">The original tool emphasized a vertical distinction between products, which went against the users' subconscious tendency to compre components side-by-side. Following a better practice by one of the competitors in the industry, we horizontally grouped together same components from each product in clean list format.</p>
-					<h4><b>Less Memorizing</b></h4>
-					<p class="lead">Good designs minimize the memory burden on the users, rarely relying on the users to memorize and recall information. The original tool lacked this ability–for instance, while scrolling down the long list of components, the columns-to-product relationship would be lost. No more memorizing which column belongs to which laptop!</p>
+					<h1><b>Card Sorting</b></h1>
+					<p class="lead">After conductign the heuristics analysis on the tool, the team created a list of major functionalities of the tool in its entirety. One of which was the use of the right-hand side navigation for various information retrieval. The following is the list of our major findings gathered from the card sorting exercises.</p><br>
+					<h4><b>Wrding hs 2 mke s3nse!</b></h4>
+					<p class="lead">Card sorters had no idea what most of the links meant. If the only method of communicating with users is through text, it best speak the users' language for starters.</p>
+					<h4><b>Sort by Relevance</b></h4>
+					<p class="lead">Think about why users would use this feeature, then focus on the actions and primary topics users would relate to this feature. This tool was made to make garbage disposal information easily accessible, so that information should become the focus.</p>
+					<h4><b>Nest(nest(nest)(ing)) information is confusing</b></h4>
+					<p class="lead">The right-hand navigation menu nested various information within each other, confusing users as to why that was. When nesting relevant information together, users must find them relevant!</p>
 				</div>
 				<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center align-vertical">
-					<img alt="analysis" height="300" src="img/prototype.gif">
+					<img alt="analysis" height="300" src="img/card_sorting.jpg">
 				</div>
 			</div><br>
 		</div>
@@ -219,17 +210,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-2 text-left">
-					<h1><b>Design Validation</b></h1>
-					<p class="lead">With the above interactive prototype, we've conducted validation tests to see if our design had an impact on testers' performances.</p>
-					<h3>Validation Test Design</h3><br>
-					<h4>Within-Subject A/B Testing</h4>
-					<p class="lead">Because we wanted to compare the performances of the testers on both designs (original and new), we conducted within-subject A/B tests. Every tester was required to go through a few hypothetical scenarios and complete a set of tasks, on both versions of the tool.</p>
-					<h4>Data Collection</h4>
-					<p class="lead">During each testing sessions, the team gathered both qualitative and quantitative data to benchmark the performances.</p>
-					<h4>Quantitative Data</h4>
-					<p class="lead">Task completion time, SUS Questionnaires, and click attempts.</p>
-					<h4>Qualitative Data</h4>
-					<p class="lead">User actions, thought processes, repetitive error patterns, first-impressions, emotional distress points, and pain-points.</p>
+					<h1><b>Design Improvements</b></h1>
+					<p class="lead">After compiling the insights gathered, the team drafted a final summary of findings and design recommendations supporting the goal of the project. The clients and stakeholders of this system were professionals who aren't familiar with technical UX-terminology, which was closely considered whilst documenting our findings.</p>
+					<h3>Design Improvements</h3><br>
+
+					<h4>Reorganization of Navigation Elements</h4>
+					<p class="lead">Users tend to assume grouped items to be related</p>
+					<h4>Reword navigation titles</h4>
+					<p class="lead">Users were confused as to who the links were meant for, construction workers, business owners, or the residents? When naming helpful links, keep a primary action in mind and who might be visiting the link.</p>
+					<h4>Consider using popular APIs</h4>
+					<p class="lead">Many users are familiar with the interaction functionalities of Google Maps, whether it be on the Web or on Mobile devices. The interactions supported by Google Maps API are easy to adopt for a wide-range of audiences!</p>
+					<h4>Consistent color-use</h4>
+					<p class="lead">Using colors consistently and appropriately will make it easier for users to navigate through the tool. Always keep in mind that users may be color blind and will need additional methods of distinguishing between elements! Patterns and numbers are easy alternatives.</p>
 				</div>
 			</div>
 		</div>
@@ -238,37 +230,31 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-2 text-left">
-					<h1><b>Final Design</b></h1>
-					<p class="lead">Through the validation test results, we've compiled and adjusted the features for our final design.</p>
+					<h1><b>Design Mockup</b></h1>
+					<p class="lead">What's a design project without a final mockup? All hands were on deck!</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-2 text-center">
-					<img alt="prompt" src="img/comparison_tool.jpg">
+					<img alt="prompt" src="img/design_mockup.jpg">
 				</div>
 				<div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-2 text-left">
-					<h3>Major Features</h3><br>
-					<h4><b>2 Comparison at a Time</b></h4>
+					<h3>Feature Implementations</h3><br>
+					<h4><b>Side-Navigation. Redefined</b></h4>
 					<ul>
-						<li>• Users often only compare between 2 laptops</li>
-						<li>• Increase in white-space for enhanced readability</li>
-						<li>• Greatly reduced amount of information displayed at once</li>
-						<li>• Paved room for component highlighting feature</li>
+						<li>• Elements categorized by primary actions</li>
+						<li>• Increased font-size for enhanced readability</li>
+						<li>• Greatly increased button size for improved accessibility</li>
 					</ul>
-					<h4><b>Component Highlighting</b></h4>
+					<h4><b>Pattern-coded Map</b></h4>
 					<ul>
-						<li>• Users appreciated visual feedback</li>
-						<li>• Comparison done quick and easily</li>
+						<li>• Use of patterns in addition to colors for improved accessibility</li>
+						<li>• Visual distinction made quick and easily</li>
 					</ul>
-					<h4><b>Comparison Mode Controller</b></h4>
+					<h4><b>Improved Wording</b></h4>
 					<ul>
-						<li>• Empower users with little technical expertise to make confident decisions</li>
-						<li>• Increase tool dependency by users</li>
-					</ul>
-					<h4><b>Relatable Descriptions</b></h4>
-					<ul>
-						<li>• Heightened relatability to component descriptions</li>
-						<li>• Makes the tool more 'human'</li>
+						<li>• Empower users relatable text</li>
+						<li>• Increase tool dependency by users instead of leaving them feeling helpless</li>
 					</ul>
 				</div>
 			</div>
@@ -279,14 +265,14 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-2 text-left">
 					<h1><b>Takeaways</b></h1>
-					<h4><b>Never Guess Personas</b></h4>
-					<p>When creating personas for this project, I quickly assumed that a technical requirement of a persona would directly correlate with their technical-knowledge. That was definitely not the case as per our user research! People who are keen with technology may not need or want a powerful computer. </p>
+					<h4><b>Never Assume Users Are Able</b></h4>
+					<p>Whilst interacting with residents, our team learned that not everyone interacting with digital devices and interfaces are visually capable. When engaging with civic-technology that supports a wider age-range of users, designers must always keep accessibility in mind and craft an inclusive and accessible interface.</p>
 
-					<h4><b>Big company ≠ omniscient</b></h4>
-					<p>No hard-feelings Dell! But this was the first project that I've done with a company this size; I always thought that well-established companies such as Dell would have a very good grasp of their users/customers. I am glad I was able to contribute to such an establishment, and hope to be able to contribute to more companies.</p>
+					<h4><b>Keeping Navigation Elements Relative</b></h4>
+					<p>The card sorting exercise for this project was the most intensive card sorting exercise I've ever practiced. Through it all, I learned that users tend to have a single primary action in mind while sifting through navigation text. They imagine one final action they wish to achieve and find relevant text on the way.</p>
 
-					<h4><b>Picked up Principle</b></h4>
-					<p>To create our interactive prototype, InVision(app) was not enough to translate our ideas and interaction pieces. I picked up a neat software called Principle to package our ideas into one interactive prototype.</p>
+					<h4><b>Creating Civic-Impact</b></h4>
+					<p>I felt a real need for UX professionals to really dive deep into the public works and civic technologies. The need for usability improvements and tests exist! Residents are crying out for better digital experiences. Once deployed into the workforce, I promised myself to also dedicate my time and skills to create lasting usability impact for civic-technologies.</p>
 				</div>
 			</div>
 		</div>
