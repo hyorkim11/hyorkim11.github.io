@@ -5,3 +5,11 @@
 .pdfobject {
 	border: none;
 }
+
+h1 {
+	margin-bottom: 40px !important;
+}
+
+h3 {
+	margin-bottom: 10px !important;
+}
