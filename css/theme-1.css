@@ -1136,16 +1136,16 @@ header.fullscreen-element .overlay:before,
   padding: 0;
 }
 .feature-icon-large .pull-left {
-  width: 25%;
+  width: 20%;
 }
 .feature-icon-large .pull-right {
-  width: 75%;
+  width: 80%;
 }
 .feature-icon-large .pull-left .icon {
   border: none;
   width: auto;
   font-size: 48px;
-  padding-top: 0px;
+  padding-top: auto;
 }
 .selector-tabs {
   margin-bottom: 56px;
