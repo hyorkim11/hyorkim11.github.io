@@ -31,3 +31,9 @@ a {
 .menu > li > a{
 	text-decoration: none !important;
 }
+
+#old_srlp {
+	height: 50vh;
+	max-height: 100vh;
+	border: 1px solid grey;
+}
