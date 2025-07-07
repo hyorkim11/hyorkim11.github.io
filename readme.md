@@ -1,18 +1,68 @@
-PDFObject is a lightweight JavaScript utility for dynamically embedding PDFs in HTML documents.
+# Josh Kim - UX/UI Design Portfolio
 
-Copyright (c) 2008-2016 Philip Hutchison
-MIT-style license: http://pipwerks.mit-license.org/
+A clean, modern portfolio website showcasing UX/UI design projects and professional experience.
 
------
+## 🚀 Recent Code Cleanup
 
-## April 2016
+This repository has been cleaned up to improve code quality and maintainability:
 
-[![CDNJS](https://img.shields.io/cdnjs/v/pdfobject.svg)](https://cdnjs.com/libraries/pdfobject/)
+### ✅ Changes Made
 
-I'm pleased to announce PDFObject 2.0 has arrived! Completely rewritten for the HTML5 era, PDFObject 2.0 has **BREAKING CHANGES** and is not backwards-compatible.
+- **Removed outdated IE conditional comments** - No longer needed for modern browsers
+- **Fixed mixed content issues** - Updated Google Fonts to use HTTPS
+- **Standardized favicon references** - All pages now use consistent SVG favicon
+- **Cleaned up commented code** - Removed password protection and unused sections
+- **Fixed target attributes** - Changed `target="none"` to `target="_blank"` for external links
+- **Improved CSS organization** - Added proper comments and removed empty rules
+- **Updated package.json** - Now properly reflects the portfolio project
+- **Removed outdated bower.json** - No longer needed for modern development
 
-For examples, instructions, and a general good time, check out the recently updated http://pdfobject.com
+### 🛠️ Technical Improvements
 
-I have completed initial testing in IE9-11, MS Edge, Safari, Firefox, Chrome, and iOS Safari. PDF embedding is not supported by Safari in iOS -- it is not a PDFObject shortcoming!
+- **HTML5 compliance** - Added proper `lang` attributes
+- **Security improvements** - Fixed mixed content warnings
+- **Code consistency** - Standardized formatting across all files
+- **Better accessibility** - Improved link targets and semantic structure
 
-If you find any issues, please report them at https://github.com/pipwerks/PDFObject/issues.
+## 📁 Project Structure
+
+```
+hyorkim11.github.io/
+├── index.html          # Home page
+├── about.html          # About page
+├── portfolio.html      # Portfolio projects
+├── contact.html        # Contact information
+├── project_*.html      # Individual project pages
+├── css/                # Stylesheets
+├── js/                 # JavaScript files
+├── img/                # Images and assets
+└── fonts/              # Font files
+```
+
+## 🚀 Getting Started
+
+1. Clone the repository
+2. Open `index.html` in your browser
+3. Or use the development server: `npm run serve`
+
+## 📝 Available Scripts
+
+- `npm run serve` - Start local development server
+- `npm run validate` - Validate HTML files
+
+## 🔧 Dependencies
+
+- Bootstrap 3.x
+- jQuery
+- Modernizr
+- Various UI libraries (FlexSlider, Isotope, etc.)
+
+## 📄 License
+
+MIT License - Feel free to use this code for your own portfolio!
+
+## 👤 Contact
+
+- **LinkedIn**: [Josh Kim](http://www.linkedin.com/in/hyorkim11)
+- **GitHub**: [hyorkim11](http://www.github.com/hyorkim11)
+- **Stack Overflow**: [hrk-er](https://stackoverflow.com/users/4358462/hrk-er)

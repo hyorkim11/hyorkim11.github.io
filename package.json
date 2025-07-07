@@ -1,22 +1,31 @@
 {
-  "name": "pdfobject",
-  "version": "2.0.201604172",
-  "description": "An open-source standards-friendly JavaScript utility for embedding PDF files into HTML documents",
-  "main": "pdfobject.js",
+  "name": "josh-kim-portfolio",
+  "version": "1.0.0",
+  "description": "Josh Kim's UX/UI Design Portfolio Website",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "python -m http.server 8000",
+    "validate": "html-validate *.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://pipwerks@github.com/pipwerks/PDFObject.git"
+    "url": "git+https://github.com/hyorkim11/hyorkim11.github.io.git"
   },
   "keywords": [
-    "pdf", "pdfobject"
+    "portfolio",
+    "ux-design",
+    "ui-design",
+    "user-experience",
+    "design"
   ],
-  "author": "Philip Hutchison <philip@pipwerks.com> (http://pipwerks.com)",
+  "author": "Josh Kim <hyorkim11@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pipwerks/PDFObject/issues"
+    "url": "https://github.com/hyorkim11/hyorkim11.github.io/issues"
   },
-  "homepage": "https://github.com/pipwerks/PDFObject#readme"
+  "homepage": "https://hyorkim11.github.io",
+  "devDependencies": {
+    "html-validate": "^8.0.0"
+  }
 }
