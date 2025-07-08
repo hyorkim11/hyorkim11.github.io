@@ -1,0 +1,82 @@
+/* PDF Object Styles */
+.pdfobject-container {
+    height: 550px;
+}
+
+.pdfobject {
+    border: none;
+}
+
+/* Project Container Styles */
+.projects-container {
+    max-width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Typography Styles */
+h1 {
+    margin-bottom: 40px !important;
+}
+
+h3 {
+    margin-bottom: 10px !important;
+}
+
+/* Link Styles */
+a {
+    text-decoration: underline !important;
+}
+
+.a-blank {
+    text-decoration: none !important;
+}
+
+.a-blank:hover {
+    text-decoration: grey dotted !important;
+}
+
+/* Spacing Utilities */
+.margin-top-sm {
+    margin-top: 40px !important;
+}
+
+.margin-top-xl {
+    margin-top: 10vh !important;
+}
+
+/* List Styles */
+.ul-custom {
+    list-style-type: disc !important;
+    padding-left: 32px;
+}
+
+.ul-custom-blank {
+    padding-left: 32px;
+}
+
+/* Image Styles */
+#old_srlp {
+    height: 50vh;
+    max-height: 100vh;
+    border: 1px solid grey;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+th,
+td {
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+
+th:last-child,
+td:last-child {
+    border-right: none;
+}

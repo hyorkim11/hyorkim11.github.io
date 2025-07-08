@@ -1,0 +1,31 @@
+{
+  "name": "josh-kim-portfolio",
+  "version": "1.0.0",
+  "description": "Josh Kim's UX/UI Design Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "python -m http.server 8000",
+    "validate": "html-validate *.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyorkim11/hyorkim11.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "ux-design",
+    "ui-design",
+    "user-experience",
+    "design"
+  ],
+  "author": "Josh Kim <hyorkim11@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyorkim11/hyorkim11.github.io/issues"
+  },
+  "homepage": "https://hyorkim11.github.io",
+  "devDependencies": {
+    "html-validate": "^8.0.0"
+  }
+}

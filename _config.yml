@@ -1,0 +1,51 @@
+# Site settings
+title: "Josh Kim - UX/UI Designer"
+email: "hyorkim11@gmail.com"
+description: "Product/UX Designer based in New Jersey with experience in delivering end-to-end UI & UX for both mobile and web applications."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://hyorkim11.github.io" # the base hostname & protocol for your site
+twitter_username: ""
+github_username: "hyorkim11"
+linkedin_username: "hyorkim11"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include files
+include:
+  - _pages
+  - _posts
+  - _projects 
