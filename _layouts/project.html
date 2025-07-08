@@ -3,31 +3,11 @@ layout: default
 ---
 
 <article class="project">
-    <header class="hero-slider">
-        <ul class="slides">
-            <li class="overlay">
-                <div class="background-image-holder parallax-background">
-                    <img alt="Background Image" class="background-image" src="{{ page.hero_image | default: '/img/new_home.jpg' | relative_url }}" />
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-                            <h1 class="text-white">{{ page.title }}</h1>
-                            <p class="text-white lead">{{ page.description }}</p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </header>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                    {{ content }}
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        {{ content }}
+      </div>
+    </div>
+  </section>
 </article> 

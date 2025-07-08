@@ -1,19 +1,11 @@
-<div class="footer-container">
-    <footer class="bg-primary short-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <div class="col-sm-12 text-center">
-                        <span class="text-jet">2022 Josh Kim - All Rights Not Reserved. Too bad.<br/>
-                        <a href="http://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a>
-                        |
-                        <a href="http://www.github.com/{{ site.github_username }}" target="_blank">Github</a>
-                        |
-                        <a href="https://stackoverflow.com/users/4358462/hrk-er" target="_blank">Stackoverflow</a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div> 
+<footer class="footer">
+  <div class="container">
+    <p>&copy; {{ site.time | date: '%Y' }} Josh Kim. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="mailto:{{ site.email }}">Email</a>
+      <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a>
+      <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
+      <a href="{{ '/KIM_RESUME.pdf' | relative_url }}" target="_blank">Resume</a>
+    </div>
+  </div>
+</footer> 

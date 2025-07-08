@@ -47,5 +47,13 @@ exclude:
 # Include files
 include:
   - _pages
-  - _posts
-  - _projects 
+  - _posts 
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  html_to_native: true
+  parse_block_html: true
+  parse_span_html: true
+  syntax_highlighter_opts:
+    disable: true 

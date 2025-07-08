@@ -2,195 +2,709 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Dick's Sporting Goods Mobile App - Josh Kim - UX/UI Designer</title>
-    <meta content="DSG Mobile Apps' modernization facelift!" name="description" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <link href="/img/jk_logo.svg" rel="icon" sizes="32x32" type="image/svg" />
-    <link href="/img/jk_logo.svg" rel="icon" sizes="16x16" type="image/svg" />
-    <link href="/css/flexslider.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="/css/line-icons.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="/css/elegant-icons.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="/css/lightbox.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="/css/theme-1.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="/css/custom.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700" rel="stylesheet" type="text/css" />
-    <script src="/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Dick's Sporting Goods Mobile App - Josh Kim - UX/UI Designer</title>
+<meta content="DSG Mobile Apps' modernization facelift!" name="description" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<link href="/img/jk_logo.svg" rel="icon" sizes="32x32" type="image/svg" />
+<link href="/img/jk_logo.svg" rel="icon" sizes="16x16" type="image/svg" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .main-container {
+    margin-top: 80px; /* Account for fixed navigation */
+  }
+  
+  .header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .header p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .section {
+    padding: 80px 0;
+  }
+  
+  .section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #495057;
+  }
+  
+  .card ul {
+    list-style: none;
+  }
+  
+  .card li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .card li:last-child {
+    border-bottom: none;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .project-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f8f9fa;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-card:hover .project-overlay {
+    opacity: 1;
+  }
+  
+  .project-content {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .project-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-content p {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+  }
+  
+  .nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #667eea;
+  }
+  
+  .footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 4rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  
+  /* Project page specific styles */
+  .project h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .project h2 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    color: #495057;
+  }
+  
+  .project h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0.5rem;
+    color: #495057;
+  }
+  
+  .project p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+  
+  .project ul, .project ol {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  }
+  
+  .project li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .project th, .project td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .project th {
+    background: #667eea;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .project blockquote {
+    border-left: 4px solid #667eea;
+    padding-left: 1rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #6c757d;
+  }
+  
+  .project code {
+    background: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+  }
+  
+  .project pre {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1rem 0;
+  }
+  
+  .project pre code {
+    background: none;
+    padding: 0;
+  }
+  
+  /* Markdown content styles */
+  .markdown-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  .markdown-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .markdown-content h2 {
+    font-size: 2.5rem;
+    margin: 3rem 0 1.5rem;
+    color: #495057;
+    text-align: center;
+  }
+  
+  .markdown-content h3 {
+    font-size: 1.75rem;
+    margin: 2rem 0 1rem;
+    color: #495057;
+  }
+  
+  .markdown-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+  }
+  
+  .markdown-content ul, .markdown-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+  }
+  
+  .markdown-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  
+  .markdown-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 2rem auto;
+    display: block;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .markdown-content hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 4rem auto;
+    max-width: 200px;
+  }
+  
+  .markdown-content .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.3s ease;
+    margin: 1rem 0.5rem 1rem 0;
+  }
+  
+  .markdown-content .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+  }
+  
+  .markdown-content strong {
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .markdown-content em {
+    font-style: italic;
+    color: #6c757d;
+  }
+  
+  /* Grid layout for skills sections */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+  
+  .skills-section {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+  }
+  
+  .skills-section h3 {
+    margin-top: 0;
+    color: #667eea;
+  }
+  
+  /* Projects grid */
+  .projects-section {
+    margin: 3rem 0;
+  }
+  
+  .project-item {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .project-item:last-child {
+    border-bottom: none;
+  }
+  
+  .project-item img {
+    max-width: 400px;
+    margin: 1rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2rem;
+    }
+    
+    .header p {
+      font-size: 1rem;
+    }
+    
+    .section h2 {
+      font-size: 2rem;
+    }
+    
+    .nav-links {
+      display: none;
+    }
+    
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .project h1 {
+      font-size: 2rem;
+    }
+    
+    .project h2 {
+      font-size: 1.75rem;
+    }
+    
+    .project table {
+      font-size: 0.9rem;
+    }
+    
+    .project th, .project td {
+      padding: 0.5rem;
+    }
+  }
+</style>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Dick’s Sporting Goods Mobile App | Josh Kim - UX/UI Designer</title>
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Dick’s Sporting Goods Mobile App" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="DSG Mobile Apps’ modernization facelift!" />
 <meta property="og:description" content="DSG Mobile Apps’ modernization facelift!" />
-<link rel="canonical" href="http://0.0.0.0:4000/projects/dsg-app/" />
-<meta property="og:url" content="http://0.0.0.0:4000/projects/dsg-app/" />
+<link rel="canonical" href="http://0.0.0.0:4005/projects/dsg-app/" />
+<meta property="og:url" content="http://0.0.0.0:4005/projects/dsg-app/" />
 <meta property="og:site_name" content="Josh Kim - UX/UI Designer" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-07-07T22:10:44-04:00" />
+<meta property="article:published_time" content="2025-07-08T00:00:17-04:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Dick’s Sporting Goods Mobile App" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-07-07T22:10:44-04:00","datePublished":"2025-07-07T22:10:44-04:00","description":"DSG Mobile Apps’ modernization facelift!","headline":"Dick’s Sporting Goods Mobile App","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/projects/dsg-app/"},"url":"http://0.0.0.0:4000/projects/dsg-app/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-07-08T00:00:17-04:00","datePublished":"2025-07-08T00:00:17-04:00","description":"DSG Mobile Apps’ modernization facelift!","headline":"Dick’s Sporting Goods Mobile App","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4005/projects/dsg-app/"},"url":"http://0.0.0.0:4005/projects/dsg-app/"}</script>
 <!-- End Jekyll SEO tag -->
-
+ 
 </head>
 
 <body>
-    <div class="loader">
-        <div class="spinner">
-            <div class="double-bounce1"></div>
-            <div class="double-bounce2"></div>
-        </div>
-    </div>
-    
-    <div class="nav-container">
-    <nav class="simple-bar top-bar">
-        <div class="container">
-            <div class="row nav-menu">
-                <div class="col-md-3 col-sm-3 columns">
-                    <a href="/"><img alt="Logo" class="logo logo-dark" src="/img/jk_logo.svg" /></a>
-                </div>
-                <div class="col-md-9 col-sm-9 columns text-right">
-                    <ul class="menu">
-                        <li style="list-style: none; display: inline">
-                            <a></a>
-                        </li>
-                        <li>
-                            <a href="/" target="_self" class="a-blank">Home</a>
-                        </li>
-                        <li>
-                            <a href="/about/" target="_self" class="a-blank">About</a>
-                        </li>
-                        <li>
-                            <a href="/portfolio/" target="_self" class="a-blank">Portfolio</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mobile-toggle">
-                <i class="icon icon_menu"></i>
-            </div>
-        </div>
-    </nav>
-</div> 
+    <!-- No loader needed for clean design --> 
+    <nav class="nav">
+  <div class="container nav-container">
+    <a href="/" class="nav-logo">Josh Kim</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/portfolio/">Portfolio</a></li>
+      <li><a href="/KIM_RESUME.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </div>
+</nav> 
     
     <div class="main-container">
-        <article class="project">
-    <header class="hero-slider">
-        <ul class="slides">
-            <li class="overlay">
-                <div class="background-image-holder parallax-background">
-                    <img alt="Background Image" class="background-image" src="/img/new_home.jpg" />
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-                            <h1 class="text-white">Dick's Sporting Goods Mobile App</h1>
-                            <p class="text-white lead">DSG Mobile Apps' modernization facelift!</p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </header>
+        <div class="markdown-content">
+            <article class="project">
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <p><img src="/img/new_plp.png" alt="DSG App" /></p>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                    <header class="header-icons overlay">
-            
-                ![DSG App](/img/new_plp.png)
+<h1 id="dicks-sporting-goods-mobile-apps">Dick’s Sporting Goods Mobile Apps</h1>
 
-                <div class="row">
-                    <div class="col-sm-12 text-center">
-                        ## 
-                            <b>Dick's Sporting Goods Mobile Apps</b>
+<p>A comprehensive modernization of the DSG mobile experience.</p>
 
-                </div>
-                
-                    <div class="col-sm-3 text-center">
-                        ### 
-                            <b>Stakeholders</b>
-                        
-                        ##### SVP of Strategy &amp; Analytics
-                            
-VP of eComm
-                            
-VP of Marketing
-                            
-eComm Product Teams
+<h2 id="stakeholders">Stakeholders</h2>
+<ul>
+  <li>SVP of Strategy &amp; Analytics</li>
+  <li>VP of eComm</li>
+  <li>VP of Marketing</li>
+  <li>eComm Product Teams</li>
+</ul>
 
-                        ### 
-                            <b>Timeline</b>
-                        
-                        ##### Feb 2020 ~ Current
+<h2 id="timeline">Timeline</h2>
+<ul>
+  <li>Feb 2020 ~ Current</li>
+</ul>
 
-                        ### 
-                            <b>Role</b>
+<h2 id="role">Role</h2>
+<ul>
+  <li>UX Designer</li>
+  <li>Cross-Functional Team of 20+</li>
+</ul>
 
-                        ##### 
-                            UX Designer
-                            
-Cross-Functional Team of 20+
+<h2 id="skills">Skills</h2>
+<ul>
+  <li>Full Product Lifecycle</li>
+  <li>Agile Methodologies</li>
+  <li>Discovery &amp; Framing</li>
+  <li>Ideation &amp; Sketching</li>
+  <li>Prototyping</li>
+  <li>Ticket Tracking</li>
+  <li>QA Testing</li>
+</ul>
 
-                    <div class="col-sm-3 text-center">
-                        ### 
-                            <b>Skills</b>
-                        
-                        ##### 
-                            
-                                - Full Product Lifecycle
-                                - Agile Methodologies
-                                - Discovery &amp; Framing
-                                - Ideation &amp; Sketching
-                                - Prototyping
-                                - Ticket Tracking
-                                - QA Testing
-</div></div></div></header>
+<hr />
 
-                </div>
-            </div>
-        </div>
-    </section>
+<h2 id="performance-metrics-2021-2022-yoys">Performance Metrics (2021-2022 YoYs)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Total App Revenue</th>
+      <th>MOVE Revenue</th>
+      <th>Total MAU</th>
+      <th>MOVE MAU</th>
+      <th>New MOVE Users</th>
+      <th>New User Acquisition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(+225%)</td>
+      <td>(+271%)</td>
+      <td>1M (+55%)</td>
+      <td>260k (+42.4%)</td>
+      <td>473k (+75%)</td>
+      <td>(+52.8%)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="product-brief">Product Brief</h2>
+<p>The goal of this suite of mobile apps was to serve as the primary retail (iOS &amp; Android) applications for the business. Our team was responsible for the design, development, testing, and maintenance of services for these applications.</p>
+
+<h2 id="my-contributions">My Contributions</h2>
+<p>I played a pivotal part in redesigning our 4 mobile applications:</p>
+<ul>
+  <li>Dick’s Sporting Goods - iOS</li>
+  <li>Dick’s Sporting Goods - Android</li>
+  <li>Golf Galaxy - iOS</li>
+  <li>Golf Galaxy - Android</li>
+</ul>
+
+<h2 id="challenges">Challenges</h2>
+<ul>
+  <li>Outdated back-end APIs &amp; patterns</li>
+  <li>Frankensteined app architecture</li>
+  <li>Heavy dependency on existing web-services</li>
+  <li>Uncharted territory of technology for business partners</li>
+  <li>Managing multiple brands &amp; platforms</li>
+  <li>Limited resources &amp; tight deadlines</li>
+</ul>
+
+<hr />
+
+<h2 id="table-of-projects">Table of Projects</h2>
+<p><em>Case studies regarding the same suite of products.</em></p>
+
+<blockquote>
+  <p><strong>Note:</strong> Projects below are still under construction! Last edited May 18, 2022 at 1:15AM :)</p>
+</blockquote>
+
+<h3 id="2020">2020</h3>
+<ul>
+  <li>Onboarding Refresh</li>
+  <li>MOVE Challenge</li>
+  <li>App-Architecture Redesign</li>
+  <li>Easy Rewards</li>
+  <li>BOPIS Curbside Check-in</li>
+  <li>My Account Redesign</li>
+</ul>
+
+<h3 id="2021-present">2021-Present</h3>
+<ul>
+  <li>App Modernization</li>
+  <li>Nike Connected</li>
+</ul>
+
+<hr />
+
+<h2 id="what-do-you-mean-frankensteined">What do you mean “frankensteined”?</h2>
+<p>When I joined the Mobile App team, the then-current state of the mobile apps was a hodgepodge of native and web experiences. Poorly-managed hybrid experiences often led users to many UX pitfalls. There wasn’t a single fully-native experience in the mobile apps and thus left users frustrated and reluctant to come back.</p>
+
+<p><strong>The app was basically a mobile website wrapped in a native app package.</strong></p>
+
+<p>Notice the amount of unnecessary information above where the fold of the mobile device would be. On a smaller device, users would not be able to see anything related to products above the fold.</p>
+
+<p><img src="/img/old_srlp.jpg" alt="Then-Current Product Listing Page" />
+<em>Then-Current Product Listing Page</em></p>
+
+<blockquote>
+  <p><strong>It was time to bring the apps to 2020.</strong></p>
+</blockquote>
+
+<hr />
+
+<h2 id="process--workflow">Process &amp; Workflow</h2>
+
+<h3 id="understanding-the-business">Understanding the Business</h3>
+<p>How does our product contribute to the business? Who are all the stakeholders involved? Whose existing workflows do our products impact? Quickly gathering background information and data was key to asking the most impactful questions to the right groups of people.</p>
+
+<h3 id="understanding--communicating-status">Understanding &amp; Communicating Status</h3>
+<p>Understanding the current state of the product and the existing user base was the first plan of action.</p>
+
+<h3 id="strategic-business-alignment">Strategic Business Alignment</h3>
+<p>We needed to tell our business partners what the current situation of the apps was, and a general north-star vision of where we wanted to be. With limited resources, we also needed a plan to address multiple apps simultaneously.</p>
+
+      </div>
+    </div>
+  </section>
 </article> 
+        </div>
     </div>
     
-    <div class="footer-container">
-    <footer class="bg-primary short-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <div class="col-sm-12 text-center">
-                        <span class="text-jet">2022 Josh Kim - All Rights Not Reserved. Too bad.<br/>
-                        <a href="http://www.linkedin.com/in/hyorkim11" target="_blank">LinkedIn</a>
-                        |
-                        <a href="http://www.github.com/hyorkim11" target="_blank">Github</a>
-                        |
-                        <a href="https://stackoverflow.com/users/4358462/hrk-er" target="_blank">Stackoverflow</a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div> 
-    
-    <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.plugin.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.flexslider-min.js"></script>
-    <script src="/js/smooth-scroll.min.js"></script>
-    <script src="/js/skrollr.min.js"></script>
-    <script src="/js/spectragram.min.js"></script>
-    <script src="/js/scrollReveal.min.js"></script>
-    <script src="/js/isotope.min.js"></script>
-    <script src="/js/twitterFetcher_v10_min.js"></script>
-    <script src="/js/lightbox.min.js"></script>
-    <script src="/js/jquery.countdown.min.js"></script>
-    <script src="/js/scripts.js"></script>
+    <footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Josh Kim. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="mailto:hyorkim11@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/hyorkim11" target="_blank">LinkedIn</a>
+      <a href="https://github.com/hyorkim11" target="_blank">GitHub</a>
+      <a href="/KIM_RESUME.pdf" target="_blank">Resume</a>
+    </div>
+  </div>
+</footer> 
+    <!-- No external scripts needed for the clean design --> 
 </body>
 </html> 

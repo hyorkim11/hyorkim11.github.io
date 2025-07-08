@@ -60,8 +60,6 @@ The amount of information relayed to the users were abundant but overwhelming. E
 **"Consistency & Standards"**
 The tool would not be able to fill out every listing of the laptops' components. If the maker of these laptops don't have these tech-spec information regarding their products, where else can users go? In addition, there were visual highlighting done inconsistently throughout the tool's interfaces, which may mislead users.
 
-<div id="HEval"></div>
-
 ## Personas & Journeys
 
 After the preliminary research on the tool, the team created 3 personas of potential users that would dictate the team's design decisions going forward with designs. We came across an interesting problem where we initially thought that a user's technical expertise would directly correlate with his/her technical-requirement. Through user surveys and interviews, we found that wasn't the case at all.
@@ -76,8 +74,6 @@ Students and people who need slightly faster and more powerful laptops for schoo
 
 **High-Tech Requirement**
 The professionals, gamers, and hobbyists that really need the rendering and multitasking power.
-
-<div id="Personas"></div>
 
 ## Usability Tests
 
@@ -117,10 +113,4 @@ Based on our research findings, we proposed several design solutions to improve 
 
 ## Results
 
-Our recommendations were well-received by the Dell team, and several of our suggestions were incorporated into future iterations of the comparison tool. The project demonstrated the value of user-centered design in improving e-commerce experiences.
-
-<script>
-// PDF embedding for HEval and Personas
-PDFObject.embed("{{ '/HEval_ASB.pdf' | relative_url }}", "#HEval");
-PDFObject.embed("{{ '/personas.pdf' | relative_url }}", "#Personas");
-</script> 
+Our recommendations were well-received by the Dell team, and several of our suggestions were incorporated into future iterations of the comparison tool. The project demonstrated the value of user-centered design in improving e-commerce experiences. 
