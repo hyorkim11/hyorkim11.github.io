@@ -1,6 +1,6 @@
-# Josh Kim - UX/UI Designer Portfolio
+# Josh Kim - UX/UI Designer Works
 
-A clean, modern portfolio website built with Jekyll and Markdown.
+A clean, modern works website built with Jekyll and Markdown.
 
 ## Features
 
@@ -46,7 +46,7 @@ A clean, modern portfolio website built with Jekyll and Markdown.
 │   └── project.html    # Project page layout
 ├── _pages/             # Static pages
 │   ├── about.md        # About page
-│   └── portfolio.md    # Portfolio page
+│   └── portfolio.md    # Works page
 ├── _projects/          # Project case studies
 ├── _posts/             # Blog posts (if any)
 ├── img/                # Images and assets

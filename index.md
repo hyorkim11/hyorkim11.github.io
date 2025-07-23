@@ -3,94 +3,75 @@ layout: default
 title: Welcome
 ---
 
-# Hi, I'm Josh Kim!
+# Josh Kim
+## Product Designer passionate about creating familiar & comfortable experiences.
 
-I am a Product/UX Designer based in New Jersey with experience in delivering end-to-end UI & UX for both mobile and web applications.
+Product/UX Designer based in New Jersey with experience in delivering end-to-end UI & UX for both mobile and web applications.
 
-[View My Resume]({{ '/KIM_RESUME.pdf' | relative_url }}){: .btn target="_blank"}
+---
+## Latest From Me
+My recent projects consist of seamlessly translating desktop experiences to mobile app experiences. Recent production releases in the Dick's Mobile App world:
+
+<table width="100%" cellspacing="12">
+  <tr>
+    <td width="50%"><img src="{{ '/img/latest_project1.png' | relative_url }}" alt="Latest Project 1" width="100%"/></td>
+    <td width="50%"><img src="{{ '/img/latest_project2.png' | relative_url }}" alt="Latest Project 2" width="100%"/></td>
+  </tr>
+  <tr>
+  <td width="50%"><img src="{{ '/img/latest_project3.png' | relative_url }}" alt="Latest Project 3" width="100%"/></td>
+    <td width="50%"><img src="{{ '/img/latest_project4.png' | relative_url }}" alt="Latest Project 4" width="100%"/></td>
+  </tr>
+</table>
+---
+## Skills
+
+| Research | Design | Software | Programming |
+| :--- | :--- | :--- | :--- |
+| User Interviews | Sketching & Wireframing| Figma | Python |
+| Surveys | Prototyping | Sketch | html/css |
+| Requirements Gathering | Web & Mobile | Adobe Suite | Javascript |
+| Needs Assessment | Design Systems | UserTesting.com | C, C++ |
+| Comparative Analysis |UI Design |Github | PHP/MySQL |
+| System Mapping | |Miro | Java |
+| Journey Mapping |  |Atlassian Suite  | |
+| Sketching & Prototyping |||
+| A/B Testing | | |
+| Heuristic Evaluation | | |
+||||
+
 
 ---
 
-## My Tool Belt
+## Case Studies
 
-### Research
-- User Interviews
-- Surveys
-- Requirements Gathering
-- Needs Assessment
-- Competitive Research
-- Comparative Research
-- System Mapping
-- User Journey Mapping
-- Prototype Testing
-- A/B Testing
-- Heuristic Evaluation
-
-### Design
-- Sketching & Wireframing
-- Prototyping
-- Web & Mobile
-- Design Systems
-- Pattern Libraries
-- Design & Dev Documentation
-
-### Software & Services
-- Figma
-- Sketch
-- Photoshop / Illustrator
-- UserTesting
-- Zeplin
-- JIRA
-- Pivotal Tracker
-- Trello
-- Miro
-- Github
-
-### Programming
-- Python
-- Markups
-- HTML / CSS
-- Javascript
-- C, C++
-- PHP/MySQL
-- Java
-- Shell Scripting
-
----
-
-## Latest Projects
-
-### Dick's Sporting Goods Mobile App
-![DSG Mobile App]({{ '/img/new_home.jpg' | relative_url }})
-
-DSG Mobile Apps' modernization facelift!
-
-[See Project]({{ '/projects/dsg-app/' | relative_url }}){: .btn}
-
-### Internal Promotion Engine
-![Internal Promotion Engine]({{ '/img/priceiq_logo.png' | relative_url }})
-
-Enhancing the workflow of existing internal users to create new promotions.
-
-[See Project]({{ '/projects/promo-engine/' | relative_url }}){: .btn}
-
-### HR Solutions Rework
-![HR Solutions Rework]({{ '/img/dsg_logo.png' | relative_url }})
-
-Taking our first step towards modernizing an old HR solutions platform.
-
-*Coming Soon*
-
-### Dell Laptop Comparison Tool
-![Dell Laptop Comparison Tool]({{ '/img/project_1.png' | relative_url }})
-
-Enhancing the usability of Dell's tool through UX research and design methods
-
-[See Project]({{ '/projects/dell-comparison/' | relative_url }}){: .btn}
-
-### Detroit's Public Services Map Tool
-![Detroit's Public Services Map Tool]({{ '/img/project_2.png' | relative_url }})
-
-Conducting UX research and analysis for design suggestions
-
-[See Project]({{ '/projects/detroit-services/' | relative_url }}){: .btn} 
+<table width="100%" cellspacing="16">
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <a href="{{ '/projects/dsg-app/' | relative_url }}">
+        <img src="{{ '/img/dsg_logo.png' | relative_url }}" alt="DSG Mobile App" style="max-width:90%; border-radius:8px;" />
+      </a>
+      <strong>Dick's Sporting Goods Mobile App</strong><br/>
+      DSG Mobile Apps' modernization facelift!
+    </td>
+    <td align="center" valign="top" width="50%">
+      <a href="{{ '/projects/promo-engine/' | relative_url }}">
+        <img src="{{ '/img/priceiq_logo.png' | relative_url }}" alt="Internal Promotion Engine" style="max-width:90%; border-radius:8px;" />
+      </a>
+      <strong>Internal Promotion Engine</strong><br/>
+      Enhancing the workflow of existing internal users to create new promotions.
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <a href="{{ '/projects/dell-comparison/' | relative_url }}">
+        <img src="{{ '/img/project_1.png' | relative_url }}" alt="Dell Laptop Comparison Tool" style="max-width:90%; border-radius:8px;" />
+      </a>
+      <strong>Dell Laptop Comparison Tool</strong><br/>
+      Enhancing the usability of Dell's tool through UX research and design methods
+    </td>
+    <td align="center" valign="top" width="50%">
+      <a href="{{ '/projects/detroit-services/' | relative_url }}">
+        <img src="{{ '/img/project_2.png' | relative_url }}" alt="Detroit's Public Services Map Tool" style="max-width:90%; border-radius:8px;" />
+      </a>
+      <strong>Detroit's Public Services Map Tool</strong><br/>
+      Conducting UX research and analysis for design suggestions 

@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Portfolio
+title: Works
 permalink: /portfolio/
 ---
 
-# Portfolio
+# Works
 
 A collection of my UX/UI design projects and case studies
 
