@@ -10,16 +10,22 @@ Product/UX Designer based in New Jersey with experience in delivering end-to-end
 
 ---
 ## Latest From Me
+<i>My apologies for the messy and unkempt UI around here! I've moved my portfolio and the tech stack for the nth time. But the content should all be there!</i>
+
 My recent projects consist of seamlessly translating desktop experiences to mobile app experiences. Recent production releases in the Dick's Mobile App world:
 
 <table width="100%" cellspacing="12">
   <tr>
     <td width="50%"><img src="{{ '/img/latest_project1.png' | relative_url }}" alt="Latest Project 1" width="100%"/></td>
-    <td width="50%"><img src="{{ '/img/latest_project2.png' | relative_url }}" alt="Latest Project 2" width="100%"/></td>
+  </tr>
+  <tr>
+  <td width="50%"><img src="{{ '/img/latest_project2.png' | relative_url }}" alt="Latest Project 2" width="100%"/></td>
   </tr>
   <tr>
   <td width="50%"><img src="{{ '/img/latest_project3.png' | relative_url }}" alt="Latest Project 3" width="100%"/></td>
-    <td width="50%"><img src="{{ '/img/latest_project4.png' | relative_url }}" alt="Latest Project 4" width="100%"/></td>
+  </tr>
+  <tr>
+  <td width="50%"><img src="{{ '/img/latest_project4.png' | relative_url }}" alt="Latest Project 4" width="100%"/></td>
   </tr>
 </table>
 ---
@@ -46,32 +52,50 @@ My recent projects consist of seamlessly translating desktop experiences to mobi
 
 <table width="100%" cellspacing="16">
   <tr>
-    <td align="center" valign="top" width="50%">
-      <a href="{{ '/projects/dsg-app/' | relative_url }}">
-        <img src="{{ '/img/dsg_logo.png' | relative_url }}" alt="DSG Mobile App" style="max-width:90%; border-radius:8px;" />
+    <td align="center" valign="top" width="33%">
+      <a href="/projects/dsg-app/">
+        <img src="/img/casestudy-pdp.png" alt="DSG Mobile App" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
+      </a>
+      <strong>Product Details Page Enhancement</strong><br/>
+      Enhancing the most important view in a mobile shopping experience.
+    </td>
+    <td align="center" valign="top" width="33%">
+      <a href="/projects/dsg-app/">
+        <img src="/img/casestudy-app.png" alt="DSG Mobile App" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
       </a>
       <strong>Dick's Sporting Goods Mobile App</strong><br/>
       DSG Mobile Apps' modernization facelift!
     </td>
-    <td align="center" valign="top" width="50%">
-      <a href="{{ '/projects/promo-engine/' | relative_url }}">
-        <img src="{{ '/img/priceiq_logo.png' | relative_url }}" alt="Internal Promotion Engine" style="max-width:90%; border-radius:8px;" />
+    <td align="center" valign="top" width="33%">
+      <a href="/projects/promo-engine/">
+        <img src="/img/priceiq_logo.png" alt="Internal Promotion Engine" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
       </a>
-      <strong>Internal Promotion Engine</strong><br/>
+      <strong>Design Systems</strong><br/>
       Enhancing the workflow of existing internal users to create new promotions.
     </td>
   </tr>
   <tr>
-    <td align="center" valign="top" width="50%">
-      <a href="{{ '/projects/dell-comparison/' | relative_url }}">
-        <img src="{{ '/img/project_1.png' | relative_url }}" alt="Dell Laptop Comparison Tool" style="max-width:90%; border-radius:8px;" />
+    <td align="center" valign="top" width="33%">
+      <a href="/projects/promo-engine/">
+        <img src="/img/priceiq_logo.png" alt="Internal Promotion Engine" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
+      </a>
+      <strong>Internal Promotion Engine</strong><br/>
+      Enhancing the workflow of existing internal users to create new promotions.
+    </td>
+    <td align="center" valign="top" width="33%">
+      <a href="/projects/dell-comparison/">
+        <img src="/img/project_1.png" alt="Dell Laptop Comparison Tool" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
       </a>
       <strong>Dell Laptop Comparison Tool</strong><br/>
       Enhancing the usability of Dell's tool through UX research and design methods
     </td>
-    <td align="center" valign="top" width="50%">
-      <a href="{{ '/projects/detroit-services/' | relative_url }}">
-        <img src="{{ '/img/project_2.png' | relative_url }}" alt="Detroit's Public Services Map Tool" style="max-width:90%; border-radius:8px;" />
+    <td align="center" valign="top" width="33%">
+      <a href="/projects/detroit-services/">
+        <img src="/img/project_2.png" alt="Detroit's Public Services Map Tool" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
       </a>
       <strong>Detroit's Public Services Map Tool</strong><br/>
-      Conducting UX research and analysis for design suggestions 
+      Conducting UX research and analysis for design suggestions
+    </td>
+  </tr>
+</table>
+ 
