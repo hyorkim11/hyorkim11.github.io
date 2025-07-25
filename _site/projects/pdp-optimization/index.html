@@ -15,14 +15,14 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #fff;
   }
-  
+
   .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -33,31 +33,31 @@
     width: 100%;
     text-align: center;
   }
-  
+
   .main-container {
     margin-top: 80px; /* Account for fixed navigation */
   }
-  
+
   .header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 100px 0;
     text-align: center;
   }
-  
+
   .header h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
   }
-  
+
   .header p {
     font-size: 1.25rem;
     opacity: 0.9;
     max-width: 800px;
     margin: 0 auto 2rem;
   }
-  
+
   .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -68,29 +68,29 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
   }
-  
+
   .btn:hover {
     background: rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
   }
-  
+
   .section {
     padding: 80px 0;
   }
-  
+
   .section h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
   }
-  
+
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
   }
-  
+
   .card {
     background: #f8f9fa;
     padding: 2rem;
@@ -98,38 +98,38 @@
     border: 1px solid #e9ecef;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
+
   .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
-  
+
   .card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #495057;
   }
-  
+
   .card ul {
     list-style: none;
   }
-  
+
   .card li {
     padding: 0.5rem 0;
     border-bottom: 1px solid #e9ecef;
   }
-  
+
   .card li:last-child {
     border-bottom: none;
   }
-  
+
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
   }
-  
+
   .project-card {
     position: relative;
     border-radius: 12px;
@@ -137,17 +137,17 @@
     background: #f8f9fa;
     transition: transform 0.3s ease;
   }
-  
+
   .project-card:hover {
     transform: translateY(-5px);
   }
-  
+
   .project-image {
     width: 100%;
     height: 250px;
     object-fit: cover;
   }
-  
+
   .project-overlay {
     position: absolute;
     top: 0;
@@ -161,27 +161,27 @@
     opacity: 0;
     transition: opacity 0.3s ease;
   }
-  
+
   .project-card:hover .project-overlay {
     opacity: 1;
   }
-  
+
   .project-content {
     text-align: center;
     color: white;
     padding: 2rem;
   }
-  
+
   .project-content h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
-  
+
   .project-content p {
     margin-bottom: 1.5rem;
     opacity: 0.9;
   }
-  
+
   .nav {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -193,37 +193,43 @@
     padding: 1rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
-  
+
   .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .nav-logo {
     font-size: 1.5rem;
     font-weight: 700;
     color: #333;
     text-decoration: none;
   }
-  
+
   .nav-links {
     display: flex;
     gap: 2rem;
     list-style: none;
   }
-  
+
   .nav-links a {
     color: #333;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
   }
-  
+
+  .nav-links a.active {
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    font-weight: bold;
+  }
+
   .nav-links a:hover {
     color: #667eea;
   }
-  
+
   .footer {
     background: #333;
     color: white;
@@ -231,58 +237,58 @@
     padding: 3rem 0;
     margin-top: 4rem;
   }
-  
+
   .footer-links {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-top: 1rem;
   }
-  
+
   .footer-links a {
     color: white;
     text-decoration: none;
     opacity: 0.8;
     transition: opacity 0.3s ease;
   }
-  
+
   .footer-links a:hover {
     opacity: 1;
   }
-  
+
   /* Project page specific styles */
   .project h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #333;
   }
-  
+
   .project h2 {
     font-size: 2rem;
     margin: 2rem 0 1rem;
     color: #495057;
   }
-  
+
   .project h3 {
     font-size: 1.5rem;
     margin: 1.5rem 0 0.5rem;
     color: #495057;
   }
-  
+
   .project p {
     margin-bottom: 1rem;
     line-height: 1.7;
   }
-  
+
   .project ul, .project ol {
     margin-bottom: 1rem;
     padding-left: 2rem;
   }
-  
+
   .project li {
     margin-bottom: 0.5rem;
   }
-  
+
   .project img {
     max-width: 100%;
     height: auto;
@@ -290,7 +296,7 @@
     margin: 2rem 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
-  
+
   .project table {
     width: 100%;
     border-collapse: collapse;
@@ -299,19 +305,19 @@
     border-radius: 8px;
     overflow: hidden;
   }
-  
+
   .project th, .project td {
     padding: 1rem;
     text-align: left;
     border-bottom: 1px solid #e9ecef;
   }
-  
+
   .project th {
     background: #667eea;
     color: white;
     font-weight: 600;
   }
-  
+
   .project blockquote {
     border-left: 4px solid #667eea;
     padding-left: 1rem;
@@ -319,7 +325,7 @@
     font-style: italic;
     color: #6c757d;
   }
-  
+
   .project code {
     background: #f8f9fa;
     padding: 0.2rem 0.4rem;
@@ -327,7 +333,7 @@
     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
     font-size: 0.9em;
   }
-  
+
   .project pre {
     background: #f8f9fa;
     padding: 1rem;
@@ -335,19 +341,19 @@
     overflow-x: auto;
     margin: 1rem 0;
   }
-  
+
   .project pre code {
     background: none;
     padding: 0;
   }
-  
+
   /* Markdown content styles */
   .markdown-content {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 2rem 0;
   }
-  
+
   .markdown-content h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -355,36 +361,36 @@
     color: #333;
     text-align: left;
   }
-  
+
   .markdown-content h2 {
     font-size: 2.5rem;
     margin: 3rem 0 1.5rem;
     color: #495057;
     text-align: left;
   }
-  
+
   .markdown-content h3 {
     font-size: 1.75rem;
     margin: 2rem 0 1rem;
     color: #495057;
   }
-  
+
   .markdown-content p {
     margin-bottom: 1.5rem;
     line-height: 1.7;
     font-size: 1.1rem;
   }
-  
+
   .markdown-content ul, .markdown-content ol {
     margin-bottom: 1.5rem;
     padding-left: 2rem;
   }
-  
+
   .markdown-content li {
     margin-bottom: 0.5rem;
     line-height: 1.6;
   }
-  
+
   .markdown-content img {
     max-width: 100%;
     height: auto;
@@ -393,7 +399,7 @@
     display: block;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   }
-  
+
   .markdown-content hr {
     border: none;
     height: 2px;
@@ -401,7 +407,7 @@
     margin: 4rem auto;
     max-width: 200px;
   }
-  
+
   .markdown-content .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -413,22 +419,22 @@
     transition: all 0.3s ease;
     margin: 1rem 0.5rem 1rem 0;
   }
-  
+
   .markdown-content .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
   }
-  
+
   .markdown-content strong {
     font-weight: 600;
     color: #495057;
   }
-  
+
   .markdown-content em {
     font-style: italic;
     color: #6c757d;
   }
-  
+
   /* Grid layout for skills sections */
   .skills-grid {
     display: grid;
@@ -436,81 +442,81 @@
     gap: 2rem;
     margin: 3rem 0;
   }
-  
+
   .skills-section {
     background: #f8f9fa;
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid #e9ecef;
   }
-  
+
   .skills-section h3 {
     margin-top: 0;
     color: #667eea;
   }
-  
+
   /* Projects grid */
   .projects-section {
     margin: 3rem 0;
   }
-  
+
   .project-item {
     margin-bottom: 3rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #e9ecef;
   }
-  
+
   .project-item:last-child {
     border-bottom: none;
   }
-  
+
   .project-item img {
     max-width: 400px;
     margin: 1rem 0;
   }
-  
+
   .nav .container, .nav-container {
     max-width: 800px;
     margin: 0 auto;
   }
-  
+
   @media (max-width: 768px) {
     .header h1 {
       font-size: 2rem;
     }
-    
+
     .header p {
       font-size: 1rem;
     }
-    
+
     .section h2 {
       font-size: 2rem;
     }
-    
+
     .nav-links {
       display: none;
     }
-    
+
     .grid {
       grid-template-columns: 1fr;
     }
-    
+
     .projects-grid {
       grid-template-columns: 1fr;
     }
-    
+
     .project h1 {
       font-size: 2rem;
     }
-    
+
     .project h2 {
       font-size: 1.75rem;
     }
-    
+
     .project table {
       font-size: 0.9rem;
     }
-    
+
     .project th, .project td {
       padding: 0.5rem;
     }
@@ -527,11 +533,11 @@
 <meta property="og:url" content="http://localhost:4000/projects/pdp-optimization/" />
 <meta property="og:site_name" content="Josh Kim - UX/UI Designer" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-07-23T23:47:46-04:00" />
+<meta property="article:published_time" content="2025-07-24T23:36:50-04:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="PDP Optimization" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-07-23T23:47:46-04:00","datePublished":"2025-07-23T23:47:46-04:00","description":"Enhancing the IA of the PDP","headline":"PDP Optimization","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/pdp-optimization/"},"url":"http://localhost:4000/projects/pdp-optimization/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-07-24T23:36:50-04:00","datePublished":"2025-07-24T23:36:50-04:00","description":"Enhancing the IA of the PDP","headline":"PDP Optimization","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/pdp-optimization/"},"url":"http://localhost:4000/projects/pdp-optimization/"}</script>
 <!-- End Jekyll SEO tag -->
  
 </head>
@@ -542,9 +548,9 @@
   <div class="container nav-container">
     <a href="/" class="nav-logo">ㅎㄹ</a>
     <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about/">About</a></li>
-      <li><a href="/portfolio/">Works</a></li>
+      <li><a href="/" class="">Home</a></li>
+      <li><a href="/about/" class="">About</a></li>
+      <li><a href="/portfolio/" class="">Works</a></li>
       <li><a href="/KIM_RESUME.pdf" target="_blank">Resume</a></li>
     </ul>
   </div>
@@ -562,48 +568,105 @@
 }
 </style>
 
-<h1 id="enhancing-the-ia-of-the-product-details-page">Enhancing the IA of the Product Details Page</h1>
+<h1 id="sneaking-in-ux-enhancements-while-tackling-inefficiencies">Sneaking in UX Enhancements While Tackling Inefficiencies</h1>
 
-<p>A reprioritization of the most important data points of our product details page.</p>
+<p>A reprioritization of the most important data points of our product details page, whilst tackling tech-debt.</p>
 
 <table>
   <tr>
-    <td valign="top"><strong>Stakeholders</strong><ul><li>VP of eComm</li><li>VP of Marketing</li><li>eComm Product Teams</li></ul></td>
-    <td valign="top"><strong>Timeline</strong><ul><li>Q3-Q4 '24</li></ul></td>
-    <td valign="top"><strong>Skills</strong><ul><li>Full Product Lifecycle</li><li>Agile Methodologies</li><li>Discovery &amp; Framing</li><li>Ideation &amp; Sketching</li><li>Prototyping</li><li>Ticket Tracking</li><li>QA Testing</li></ul></td>
+    <td valign="top">
+      <strong>Stakeholders</strong>
+      <ul>
+        <li>VP of eComm</li>
+        <li>VP of Marketing</li>
+        <li>eComm Product Teams</li>
+      </ul>
+    </td>
+    <td valign="top">
+      <strong>Timeline</strong>
+      <ul>
+        <li>Q2-Q4 '24</li>
+      </ul>
+    </td>
+    <td valign="top">
+      <strong>Skills</strong>
+      <ul>
+        <li>Full Product Lifecycle</li>
+        <li>Agile Methodologies</li>
+        <li>Discovery &amp; Framing</li>
+        <li>Ideation &amp; Sketching</li>
+        <li>Prototyping</li>
+        <li>Ticket Tracking</li>
+        <li>QA Testing</li>
+      </ul>
+    </td>
   </tr>
 </table>
 
-<h3 id="role">Role</h3>
-<p>Product Designer in an EPD team of 10+ Engineers, 1 Product Manager, and 1 Product Designer.</p>
-
 <hr />
 
-<h2 id="performance-metrics-jan-may-2025">Performance Metrics (Jan-May 2025)</h2>
+<h3 id="performance-metrics-jan-may-25">Performance Metrics (Jan-May ‘25)</h3>
 <p>We A/B tested this new design to approximately 50% of our app traffic for 4 months. We were able to attribute $14M in incremental revenue with this update!</p>
 
+<p>Exact efficiency metrics were difficult to capture, but we’ve reduced the number of PDP templates from 11 to 4!</p>
+
 <hr />
 
-<h2 id="project-brief">Project Brief</h2>
-<p>This project aimed to redesign the top-level information architecture of the product details page to improve overall usability and improve conversion. In addition, it required to address underlying technical issues that caused the team to not perform effeciently. My role as the Product Designer, involved conducting extensive research, developing wireframes, maintaining constant communication with engineers, and implementing design solutions that bridged the gap between aesthetics and functionality.</p>
+<h3 id="project-brief">Project Brief</h3>
+<p>In an eCommerce application, the product detail page (aka PDP) is one of the most important views within a typical shopping flow. It plays a huge role in ‘making or breaking’ the user’s purchasing decision.</p>
 
-<h2 id="my-contributions">My Contributions</h2>
+<p>This project aimed to tackle a couple of goals in one fell swoop:</p>
+<ol>
+  <li>Alleviate operating inefficiencies by consolidating 8 different PDP templates.</li>
+  <li>Redesign the top-level information architecture of the PDP to improve overall usability and improve conversion.</li>
+</ol>
+
+<h3 id="my-role--contributions">My Role &amp; Contributions</h3>
+<p>I served as the lead Product Designer in an EPD team of 10+ Engineers and 1 Product Manager.</p>
+
+<p>My role involved conducting extensive research, developing wireframes, maintaining constant communication with engineers and QA teammates, implementing design solutions that bridged the gap between aesthetics and functionality, assisting in writing tickets, and testing front-end related tickets during QA.</p>
+
+<h3 id="challenges">Challenges</h3>
+<ul>
+  <li>Many existing templates(11) of PDPs</li>
+  <li>Underlying tech-debt</li>
+  <li>Managing teammate expectations and compromising on implementation priority</li>
+  <li>Tactfully sneaking in UX enhancements 😉</li>
+</ul>
+
+<hr />
+
+<h3 id="design-process">Design Process</h3>
+<ol>
+  <li>Identify current technical limitations, gaps, and areas of opportunities.</li>
+  <li>Conduct comparative analysis of popular PDPs</li>
+  <li>Design potential solution/approach</li>
+  <li>Present findings and recommendation</li>
+  <li>Prepare design comps for engineering &amp; QA review</li>
+  <li>QA test</li>
+  <li>Launch &amp; monitor</li>
+</ol>
+
+<hr />
+
+<h3 id="1-understanding-current-inefficiencies">1. Understanding current inefficiencies</h3>
+<p>I needed to understand our current inefficiencies with our PDP. Through chatting with engineering and our QA teams, I’ve found that we had a total of 11 different PDP templates.</p>
+
+<p><img src="/img/total-pdps.png" alt="8 Different Templates" /></p>
+
+<p><br />
+<br /></p>
+
+<p>Our team’s primary operating inefficiencies were due to the fact that we had a “Store Mode” template of all of our regular PDP templates. Said store mode templates were originally created with the intention of offering a better in-store shopping experience by rearranging and enlarging a few components within the PDP.</p>
+
+<p><img src="/img/pdp-old-storemode.png" alt="Store Mode Example1" />
+In this example of a regular template versus a storemode template, data points such as the product title, pricing, in-store availability, and ratings were prioritized towards the top of the view to accommodate the in-store shopping behaviors.</p>
+
+<p>Due to the many different types of templates, our team had to do a lot more work to develop and test even the smallest change made on our PDPs. Therefore, improvements to PDPs weren’t easy to take on, when in reality, we needed to constantly iterate, test, and implement new features into our PDPs!</p>
 
 <blockquote>
-  <p><strong>Note:</strong> This case study is under construction. Last updated 11:47PM - 7/23/25</p>
+  <p><strong>Note:</strong> This case study is under construction. Last updated 11:36PM - 7/24/25</p>
 </blockquote>
-
-<h2 id="challenges">Challenges</h2>
-
-<hr />
-
-<h2 id="table-of-projects">Table of Projects</h2>
-
-<hr />
-
-<hr />
-
-<h2 id="process--workflow">Process &amp; Workflow</h2>
 
       </div>
     </div>

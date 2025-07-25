@@ -4,12 +4,12 @@ title: Welcome
 ---
 
 # Hi there!
-## My name is Josh Kim and I am a Product Designer.
-
-I am a designer based in New Jersey with experience in delivering end-to-end UI & UX for both mobile and web applications. I am passionate about creating familiar & comfortable experiences.
+## My name is Josh Kim and I am a Product Designer
+### experienced in delivering end-to-end UI & UX for both mobile and web applications. I am passionate about creating familiar & comfortable experiences.
 
 ---
 ## Latest Works
+
 > **Note:** Apologies for the messy and unkempt UI around here! I've moved my portfolio and the tech stack for the nth time. But the content should all be there!
 
 My recent projects consist of seamlessly translating desktop experiences to mobile app experiences. Recent production releases in the Dick's Mobile App world:

@@ -6,33 +6,28 @@ hero_image: "/img/new_home.jpg"
 permalink: /projects/dsg-app/
 ---
 
-![DSG App](/img/new_plp.png)
-
 # Dick's Sporting Goods Mobile Apps
 
 A comprehensive modernization of the DSG mobile experience.
 
-## Stakeholders
-- SVP of Strategy & Analytics
-- VP of eComm
-- VP of Marketing
-- eComm Product Teams
+<table>
+  <tr>
+    <td valign="top"><strong>Stakeholders</strong>
+    <ul><li>SVP of Strategy</li><li>VP of eComm</li><li>VP of Marketing</li><li>eComm Product Teams</li></ul></td>
+    <td valign="top"><strong>Timeline</strong><ul><li>'20-'23</li></ul></td>
+    <td valign="top"><strong>Skills</strong><ul>
+    <li>Full Product Lifecycle</li>
+    <li>Agile Methodologies</li>
+    <li>Discovery & Framing</li>
+    <li>Ideation & Sketching</li>
+    <li>Prototyping</li>
+    <li>QA Testing</li>
+    </ul></td>
+  </tr>
+</table>
 
-## Timeline
-- Feb 2020 ~ Current
-
-## Role
-- UX Designer
-- Cross-Functional Team of 20+
-
-## Skills
-- Full Product Lifecycle
-- Agile Methodologies
-- Discovery & Framing
-- Ideation & Sketching
-- Prototyping
-- Ticket Tracking
-- QA Testing
+### Role
+Product Designer in an EPD team of 10+ Engineers, 1 Product Manager, and 1 Product Designer.
 
 ---
 
