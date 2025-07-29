@@ -18,21 +18,21 @@ I aspire to design digital experiences that people don't frown nor raise their e
 
 ## Outside of Work
 
-### DIY Junkie
+### DIY Junkie 🛠️
 When I'm not working, I'm probably DIY-ing something around the house, or on one of our family cars. I recently finished a kitchen renovation in our family's house, where I learned all of my new handy skills. Demolition, framing, electrical and plumbing rough-ins, drywalling, taping, mudding, and painting! Literally can build a house now.
 
 I recently picked up how to do simple car maintenance things like changing out the air filters, engine oils, brake fluids, and brake pads, calipers and rotors! Why pay a mechanic hundreds when you can get it done yourself?! DIY is FUN and $-saving!
 
-### Gym
+### Gym 🏋🏻‍♀️
 I like to go to the gym at consistent times throughout the week, forcing myself to stick to healthy habits.
 
-### Gaming
+### Gaming 🖥️
 I've been a PC gamer for as long as I can remember. From the old Windows '95 to the latest Diablo or Escape from Tarkov games, it's been a big part of my life. I mostly enjoy RPGs or Shooters.
 
-### Food & Eating
+### Food & Eating 🍔
 I hit the gym to consume more calories. Eating gives me joy. Over the weekends, you can find me hunting for the next hottest bakeries and/or restaurants in the greater NYC area.
 
-### Working On a New Project or Idea...
+### Working On a New Project or Idea... 💡
 My latest project was my first iOS app ever! A quick tip calculator for all my restaurant visits :)
 I've worked on various projects with friends, and even had a startup in the past with colleagues. Ask me about them!
 

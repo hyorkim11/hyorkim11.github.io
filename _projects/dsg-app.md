@@ -39,7 +39,7 @@ Product Designer in an EPD team of 10+ Engineers, 1 Product Manager, and 1 Produ
 
 ---
 
-## Product Brief
+## Overview
 The goal of this suite of mobile apps was to serve as the primary retail (iOS & Android) applications for the business. Our team was responsible for the design, development, testing, and maintenance of services for these applications.
 
 ## My Contributions
