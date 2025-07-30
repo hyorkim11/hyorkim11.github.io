@@ -93,8 +93,8 @@ My role involved conducting extensive research, developing wireframes, maintaini
 
 ---
 
-### 1. Understanding Current Inefficiencies
-We needed to understand our current inefficiencies with our PDP. Through chatting with engineering and our QA teams, I've found that we had a total of 11 different PDP templates.
+### 1. Identifying Areas of Opportunities
+We needed to first understand our current inefficiencies with our PDP. Through chatting with engineering and our QA teams, I've found that we had a total of 11 different PDP templates.
 
 ![8 Different Templates](/img/total-pdps.png)
 
@@ -107,6 +107,11 @@ Our team's primary operating inefficiencies were due to the fact that we had a "
 In this example of a regular template versus its storemode counterpart, data points such as the product title, pricing, in-store availability, and ratings were prioritized towards the top of the view. In addition, the text sizes have been increased to increase visibility and legibility in-stores.
 
 Due to the many different types of templates, our team had to do a lot more work to develop and test even the smallest change made on our PDPs. Therefore, improvements to PDPs weren't easy to take on, when in reality, we needed to constantly iterate, test, and implement new features into our PDPs!
+
+In addition to the operational inefficiencies, we had a business requirement and also areas for general UX improvement as well for the PDPs. Lots to address with this update! To summarize, the primary requirements were the following:
+1. Reduce template count
+2. Address UX issues
+3. Highlight more product media
 
 <br>
 
@@ -144,20 +149,32 @@ Looking closer, you can also see a pattern where a single-brand, direct-to-consu
 <br>
 
 ### 3. Design Potential Solution
+Before we design anything, we needed to make sure we're solutioning for the right things. We need to know what we're solving for!
 
-#### Consolidating Manual Templates by Utilizing Dynamic Components
+#### UX Requirement: Consolidating Templates
 The design approach was to create 'dynamic' components that can have its own variations depending on available product data. Whether it's variable price points, promotion applied, store mode or not, and etc, instead of manually building out templates for the use cases, the dynamic components would be able to handle many different types of variations.
 
-For example, the following displays the main variations we've implemented for the primary product information cluster.
+For example, the following image displays the main variations we've implemented for the primary product information cluster.
 
 ![Comp Analysis](/img/pdpopt-dynamic-component.png)
 
-This small collection of datapoints created into a single component is capable of serving every type of product we sell: it supports badging, different pricing messaging, and accounts product ratings. 
+This small collection of datapoints created into a single component is capable of serving every type of product we sell: it supports badging, different pricing messaging, and accounts product ratings. Giving ample space for the product title and pricing also helped me to address an existing UX issue of users not being able to properly read longer product titles in its entirety.
+
+The above product information cluster helped us solve a few UX issues, address stakeholder needs, all the while maintaining the best IA hierarchy above the fold:
 
 <br>
 
-#### Highlighting Product Imagery
+#### Business Requirement: Highlighting Product Imagery
 ![Comp Analysis](/img/pdpopt-beforeafter.png)
+Our eComm business stakeholders have expressed their need in the app better highlighting some of the rich media that come with the product's imagery. The existing image container (left) failed to provide an up-front preview of said media and instead brought the product attributes much closer to the top of the view.
 
+With the new design (right) we showcase additional richer product media in thumbnails for the users to quickly scan and be exposed to at a glance.
 
-> **Note:** This case study is under construction. Last updated 12:36AM - 7/29/25
+Product imagery doesn't stop there at the top! We've also enlarged the thumbnails for our colorway selectors to give our users a better and more accurate representations of product colorways.
+
+<br>
+
+#### General UX Enhancements
+![Comp Analysis](/img/pdpopt-beforeafter2.png)
+
+> **Note:** This case study is under construction. Last updated 11:52M - 7/29/25
