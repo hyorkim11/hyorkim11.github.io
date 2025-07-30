@@ -29,7 +29,7 @@ A collection of my UX/UI design projects and case studies
     </td>
     <td align="center" valign="top" width="33%">
       <a href="/projects/promo-engine/">
-        <img src="/img/priceiq_logo.png" alt="Internal Promotion Engine" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
+        <img src="/img/design-system.png" alt="Design systems" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
       </a>
       <strong>Design Systems</strong><br/>
       Empowering design and engineering to work faster and more efficiently.

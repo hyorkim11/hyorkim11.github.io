@@ -3,16 +3,16 @@ layout: default
 title: Welcome
 ---
 
-# Hi there!
-## My name is Josh Kim and I am a Product Designer
-### experienced in delivering end-to-end UI & UX for both mobile and web applications. I am passionate about creating familiar & comfortable experiences.
+## Hi there!
+### My name is Josh Kim.
+I am a Product Designer experienced in delivering end-to-end UI & UX for both mobile and web applications, passionate about creating familiar & comfortable experiences.
 
 ---
 ## Latest Works
 
-> **Note:** Apologies for the messy and unkempt UI around here! I've moved my portfolio and the tech stack for the nth time. But the content should all be there!
+> **Note:** Apologies for the messy and unkempt UI around here! I've moved my portfolio and the tech stack for the nth time. Currently in the process of creating a new case study and porting over existing content.
 
-My recent projects consist of seamlessly translating desktop experiences to mobile app experiences. Recent production releases in the Dick's Mobile App world:
+Recent production releases in the Dick's Mobile App world:
 
 <style>
 .no-shadow-table img {
@@ -82,7 +82,7 @@ My recent projects consist of seamlessly translating desktop experiences to mobi
     </td>
     <td align="center" valign="top" width="33%">
       <a href="/projects/promo-engine/">
-        <img src="/img/priceiq_logo.png" alt="Internal Promotion Engine" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
+        <img src="/img/design-system.png" alt="Design systems" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
       </a>
       <strong>Design Systems</strong><br/>
       Empowering design and engineering to work faster and more efficiently.
