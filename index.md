@@ -3,9 +3,12 @@ layout: default
 title: Welcome
 ---
 
-## Hi there!
-### My name is Josh Kim.
-I am a Product Designer experienced in delivering end-to-end UI & UX for both mobile and web applications, passionate about creating familiar & comfortable experiences.
+<br>
+# Hi there!
+## My name is Josh Kim.
+## I am a Product Designer passionate about creating familiar & comfortable experiences.
+
+<br>
 
 ---
 ## Latest Works
