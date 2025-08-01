@@ -12,7 +12,7 @@ description: "Enhancing the IA of the PDP"
 }
 </style>
 
-# PDP IA Enhancements
+# PDP Optimization
 
 A reprioritization of the most important data points of our product details page (PDP), whilst tackling tech-debt and logistical inefficiencies.
 

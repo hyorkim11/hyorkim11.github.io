@@ -30,16 +30,22 @@ Recent production releases in the Dick's Mobile App world:
 
 <table class="no-shadow-table" width="100%" cellspacing="12">
   <tr>
-    <td width="50%"><img src="{{ '/img/latest_project1.png' | relative_url }}" alt="Latest Project 1" width="100%" style="object-fit:cover; object-position:center;"/></td>
+    <td width="50%">
+      <a href="/projects/pdp-optimization/">
+        <img src="{{ '/img/latest_project1.png' | relative_url }}" alt="Latest Project 1" width="100%" style="object-fit:cover; object-position:center;"/>
+      </a>
+    </td>
   </tr>
   <tr>
-    <td width="50%"><img src="{{ '/img/latest_project2.png' | relative_url }}" alt="Latest Project 2" width="100%" style="object-fit:cover; object-position:center;"/></td>
+    <td width="50%">
+      <img src="{{ '/img/latest_project2.png' | relative_url }}" alt="Latest Project 2" width="100%" style="object-fit:cover; object-position:center;" title="Case study not yet available"/>
+    </td>
   </tr>
   <tr>
-    <td width="50%"><img src="{{ '/img/latest_project3.png' | relative_url }}" alt="Latest Project 3" width="100%" style="object-fit:cover; object-position:center;"/></td>
+    <td width="50%"><img src="{{ '/img/latest_project3.png' | relative_url }}" alt="Latest Project 3" width="100%" style="object-fit:cover; object-position:center;" title="Case study not yet available"/></td>
   </tr>
   <tr>
-    <td width="50%"><img src="{{ '/img/latest_project4.png' | relative_url }}" alt="Latest Project 4" width="100%" style="object-fit:cover; object-position:center;"/></td>
+    <td width="50%"><img src="{{ '/img/latest_project4.png' | relative_url }}" alt="Latest Project 4" width="100%" style="object-fit:cover; object-position:center;" title="Case study not yet available"/></td>
   </tr>
 </table>
 ---
@@ -80,13 +86,13 @@ Recent production releases in the Dick's Mobile App world:
       <strong>Mobile App Redesign</strong><br/>
       Rebuilding apps natively to garner over 3M MAU in just 3 years after relaunch.
     </td>
-    <td align="center" valign="top" width="33%">
+    <!-- <td align="center" valign="top" width="33%">
       <a href="/projects/promo-engine/">
         <img src="/img/design-system.png" alt="Design systems" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
       </a>
       <strong>Design Systems</strong><br/>
       Empowering design and engineering to work faster and more efficiently.
-    </td>
+    </td> -->
   </tr>
   <tr>
     <td align="center" valign="top" width="33%">
