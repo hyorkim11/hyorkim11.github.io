@@ -12,9 +12,9 @@ description: "Enhancing the IA of the PDP"
 }
 </style>
 
-# Sneaking in UX Enhancements While Tackling Inefficiencies
+# PDP IA Enhancements
 
-A reprioritization of the most important data points of our product details page, whilst tackling tech-debt.
+A reprioritization of the most important data points of our product details page (PDP), whilst tackling tech-debt and logistical inefficiencies.
 
 <table>
   <tr>
@@ -176,5 +176,51 @@ Product imagery doesn't stop there at the top! We've also enlarged the thumbnail
 
 #### General UX Enhancements
 ![Comp Analysis](/img/pdpopt-beforeafter2.png)
+In addition to enlarging the product thumbnails and increasing the selection cues for the product attribute pickers, we've made additional UI updates to give the overall PDP a visual uplift.
 
-> **Note:** This case study is under construction. Last updated 11:52M - 7/29/25
+Although a fast-follow to the MVP launch, the fulfillment/delivery tile update was also done to top off the visual polish and tidy up the display logic.
+
+<br>
+
+### 4. Present Findings and Recommendation
+After many rounds of design syncs and a few design alignment & critique sessions with other designers on our team and the web teams, the designs were semi-finalized.
+Our product manager and I then took said design recommendations to our engineers and walked them through all the details and flows.
+
+If a project has direct eyes of the business stakeholders, we would very much let them in throughout the whole process, and take this opportunity to present our findings out to them as well. But for this project, it was more of a "let's just go do it" kind of deal. ☺️
+
+<br>
+
+### 5. Prepare design comps for engineering & QA review
+
+We usually take as many sessions as needed to get everyone involved in the building and testing of the designed solutions to understand what is being proposed. In addition to this semi-final walkthroughs, we do bring in engineers to sit in on our design reviews ahead of time to ensure we're covering all the edge cases and considering technical limitations.
+
+There is always room for improvement, so these final design reviews prior to tickets being written are also times for engineering and QA feedback.
+
+This is also where design is often required to make compromises with the engineering team. Due to resource constraints, engineering is often asking design to pull back on design complexities such as data preservation, transitional animations, and complex display logic.
+
+For this project, we had to compromise on updating the attribute pickers, and the fulfillment tiles to post release. Even though for the sake of this case study I grouped it into one flow, said features went in post MVP. So technically, the incremental revenue could be purely accounted for by the IA and image gallery updates! 
+
+<br>
+
+### 6. QA Test
+What's better than testing our own designs in an actual build!? Nothing is more satisfying than seeing the pixels be perfect, margins and spacing all crisp, and the transitions and animations are on point! I can't thank engineers enough for all those reopened tickets for "slightly off" UI elements.
+
+We test our own designs and ensure everything is as intended, then close out the tickets.
+
+<br>
+
+### 7. Launch & Monitor
+Then we had to wait until our analytics platform, Adobe Analytics, had enough data for us to reach significance in the performance metrics. After about 2 months into the push to production, we saw a tiny bit of a drop in the "Add to Cart" rates (decrease not significant enough to pull the plug!). Because we didn't see a drop in any other success metric such as conversion and revenue, we kept watching until the revenue impact met significance.
+
+Another month or so after, we were able to attribute an incremental lift in revenue of about $14M! We immediately guessed that the "Add to Cart" rate fell because our users had a better idea of what product they were looking at. (in hindsight, we should've watched the cart deletion rates to account to counter this theory!)
+
+<br>
+
+### Takeaways & Next Steps
+Designers are often asked to cut back on designs, and I feel like its a constant battle with myself to not get too carried away with a feature or a specific piece of a UI element. But there are those times when that far-future vision is needed to sell! I guess I will forever catch myself between the two "modes" of thinking when designing 🥲.
+
+I learned first-hand (again!) that there is truth in the popular psychological phenomena, Aesthetic-Usability Effect that basically says "what looks better, works better". Of course, this phenomena can't and shouldn't be attributed too heavily in the project's success, as the obvious IA restructuring and product imagery enhancements have made the biggest impacts. However, to most of our users, it probably was a minor update that largely went unnoticed. But the numbers don't lie!
+
+The realities of being understaffed with ever-rising expectations of deliverables by the business, we were/are not able to dig further into the results and conduct additional refinements. But had we the time, we would dig into usage metrics at a component level for the entirety of the PDP and set a baseline, and begin iterating on the components to net the best results. 
+
+> **Note:** This case study is under construction. Last updated 12:12AM - 8/1/25
