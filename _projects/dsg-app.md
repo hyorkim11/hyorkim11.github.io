@@ -12,9 +12,9 @@ permalink: /projects/dsg-app/
 }
 </style>
 
-# Dick's Sporting Goods Mobile Apps
+# Modernizing eCommerce Apps
 
-A comprehensive modernization of the DSG mobile experience.
+A comprehensive modernization of the Dick's Sporting Goods and Golf Galaxy mobile shopping experiences.
 
 <table>
   <tr>
@@ -32,28 +32,41 @@ A comprehensive modernization of the DSG mobile experience.
   </tr>
 </table>
 
-### Role
-Product Designer in an EPD team of 10+ Engineers, 1 Product Manager, and 1 Product Designer.
+### Role & Contributions
+Product Designer in an EPD team of 20+ Software Engineers, 1 Product Manager, 2 Product Designers, and 3+ QA Engineers.
 
----
-
-## Performance Metrics (2021-2022 YoYs)
-
-| Total App Revenue | MOVE Revenue | Total MAU | MOVE MAU | New MOVE Users | New User Acquisition |
-|------------------|--------------|-----------|----------|---------------|---------------------|
-| (+225%)          | (+271%)      | 1M (+55%) | 260k (+42.4%) | 473k (+75%) | (+52.8%)           |
-
----
-
-## Overview
-The goal of this suite of mobile apps was to serve as the primary retail (iOS & Android) applications for the business. Our team was responsible for the design, development, testing, and maintenance of services for these applications.
-
-## My Contributions
 I played a pivotal part in redesigning our 4 mobile applications:
 - Dick's Sporting Goods - iOS
 - Dick's Sporting Goods - Android
 - Golf Galaxy - iOS
 - Golf Galaxy - Android
+
+---
+
+## Performance Metrics
+
+### As of 2022 (YoY)
+- 1 year post relaunch: MAU +100% at 1.4M users and revenue +22%
+
+### As of 2023 (YoY)
+- 2 years post relaunch: MAU +31% at 2.2M users and revenue +76%
+- CVR rate 4.41%
+- Sign-in rate 94.4%
+
+---
+
+## Overview
+
+<table style="background: none;">
+  <tr>
+    <td valign="top" style="padding-right: 20px; border-bottom: none;">
+      The goal of this suite of mobile apps was to serve as the primary retail (iOS & Android) applications for the business. Our team was responsible for the design, development, testing, and maintenance of services for these applications.
+    </td>
+    <td valign="top" style="text-align: top; border-bottom: none;">
+      <img src="/img/new-app.png" alt="DSG New App" style="max-width: 100%; height: auto; border-radius: 8px; text-align: top; box-shadow:none;">
+    </td>
+  </tr>
+</table>
 
 ## Challenges
 - Outdated back-end APIs & patterns
@@ -65,46 +78,77 @@ I played a pivotal part in redesigning our 4 mobile applications:
 
 ---
 
-## Table of Projects
-*Case studies regarding the same suite of products.*
-
-> **Note:** Projects below are still under construction! Last edited May 18, 2022 at 1:15AM :)
-
-### 2020
-- Onboarding Refresh
-- MOVE Challenge
-- App-Architecture Redesign
-- Easy Rewards
-- BOPIS Curbside Check-in
-- My Account Redesign
-
-### 2021-Present
-- App Modernization
-- Nike Connected
+## Design Process
+1. Understanding current states
+2. Visioning and aligning on outcomes
+3. Defining baselines
+4. Design, test, launch, and iterate
 
 ---
 
-## What do you mean "frankensteined"?
-When I joined the Mobile App team, the then-current state of the mobile apps was a hodgepodge of native and web experiences. Poorly-managed hybrid experiences often led users to many UX pitfalls. There wasn't a single fully-native experience in the mobile apps and thus left users frustrated and reluctant to come back.
+## Understanding Current States
 
-**The app was basically a mobile website wrapped in a native app package.**
+During the initial phases of any project, I gather data and information about the product.
 
-Notice the amount of unnecessary information above where the fold of the mobile device would be. On a smaller device, users would not be able to see anything related to products above the fold.
+Means of gathering data and information may include (but aren't limited to):
+- collaborative team sessions
+- interviews
+- comparative/competitive analysis
+- service blueprinting
+- journey mapping sessions
 
-![Then-Current Product Listing Page](/img/old_srlp.jpg)
-*Then-Current Product Listing Page*
+<br>
+
+### User Flows
+I broke down the shopping journeys of users in our existing ecommerce section of the apps. Interviewing and conducting user testing helped me understand where the users' pain points were, and why they may be experiencing them.
+
+![App User Flow](/img/app-user-flow.jpg)
+
+<br>
+
+### Service Blueprints
+![App Service Blueprint](/img/app-service-blueprint.jpg)
+
+When dealing with complex systems/products that involve many teams, I find it helpful to start with a service blueprint. I do this before diving into users to better understand why and where users may have pain points.
+
+This version of the blueprint contained:
+- user flow
+- front-end UI
+- user sentiments (assumed UX frustrations)
+- back-end service calls
+- teams & stakeholders responsible
+
+<br>
+
+### Identifying Stakeholders
+![App Stakeholder Mapping](/img/app-stakeholder-map.jpg)
+Understanding who else shares the piece of the pie is important, as products aren't made in silos. The mobile app was a special case, because the business hadn't invested much into them. However, once we asked our immediate stakeholders, it seemed like everyone had some say in what happens with and within the app.
+
+---
+
+
+Add this before research section ends
+
+### A Frankensteined Architecture
+The then-current state of the mobile apps was a hodgepodge of native and web experiences. Poorly-managed hybrid experiences often led users to many UX pitfalls. There wasn't a single fully-native experience flow in the mobile apps and thus left users frustrated and reluctant to come back.
+
+**The app was basically a mobile website wrapped in a native app**
+
+<table style="background: none;">
+  <tr>
+    <td valign="top" style="padding-right: 20px; border-bottom: none;">
+      On the right is the then-current search results listing page.
+
+
+      Notice the amount of unnecessary information above where the fold of the mobile device would be. On a smaller device, users would not be able to see anything related to products above the fold.
+    </td>
+    <td valign="top" style="text-align: top; border-bottom: none;">
+      <img src="/img/old_srlp.jpg" alt="DSG App Pre-Update" style="max-width: 100%; height: auto; border-radius: 8px; text-align: top;">
+    </td>
+  </tr>
+</table>
 
 > **It was time to bring the apps to 2020.**
 
 ---
 
-## Process & Workflow
-
-### Understanding the Business
-How does our product contribute to the business? Who are all the stakeholders involved? Whose existing workflows do our products impact? Quickly gathering background information and data was key to asking the most impactful questions to the right groups of people.
-
-### Understanding & Communicating Status
-Understanding the current state of the product and the existing user base was the first plan of action.
-
-### Strategic Business Alignment
-We needed to tell our business partners what the current situation of the apps was, and a general north-star vision of where we wanted to be. With limited resources, we also needed a plan to address multiple apps simultaneously.
