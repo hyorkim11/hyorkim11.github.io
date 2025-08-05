@@ -24,9 +24,14 @@
   }
 
   .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
+  }
+
+  .markdown-content {
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .markdown-content table {
@@ -76,6 +81,7 @@
 
   .section {
     padding: 80px 0;
+    width: 100%;
   }
 
   .section h2 {
@@ -228,6 +234,43 @@
 
   .nav-links a:hover {
     color: #667eea;
+  }
+
+  /* Hamburger menu styles */
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+  }
+
+
+
+  .hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* Hamburger animation when active */
+  .hamburger-menu.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger-menu.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
   }
 
   .footer {
@@ -475,9 +518,117 @@
     margin: 1rem 0;
   }
 
-  .nav .container, .nav-container {
-    max-width: 800px;
+  .nav-container {
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 900px;
+      padding: 0 20px;
+    }
+
+    .markdown-content {
+      max-width: 700px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+
+    .markdown-content {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .section {
+      max-width: 100%;
+      margin: 0;
+      width: 100%;
+    }
+
+    /* Mobile table improvements */
+    table {
+      width: 100% !important;
+      font-size: 0.9rem;
+    }
+
+    td {
+      display: block;
+      width: 100% !important;
+      padding: 8px 0;
+      text-align: left;
+    }
+
+    /* Mobile image improvements */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Mobile text improvements */
+    h1 {
+      font-size: 2.2rem;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      line-height: 1.3;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 16px;
+    }
+
+    .markdown-content {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    /* Small mobile table improvements */
+    table {
+      font-size: 0.85rem;
+    }
+
+    td {
+      padding: 6px 0;
+    }
+
+    /* Small mobile text improvements */
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
   }
 
   @media (max-width: 768px) {
@@ -493,8 +644,48 @@
       font-size: 2rem;
     }
 
+    /* Mobile navigation styles */
+    .hamburger-menu {
+      display: flex;
+    }
+
+    .nav-container {
+      position: relative;
+    }
+
     .nav-links {
       display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 100;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .nav-links li {
+      list-style: none;
+    }
+
+    .nav-links a {
+      display: block;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #f8f9fa;
     }
 
     .grid {
@@ -520,8 +711,72 @@
     .project th, .project td {
       padding: 0.5rem;
     }
+
+    /* Mobile table styles for better readability */
+    .project table {
+      font-size: 0.9rem;
+    }
+
+    .project th, .project td {
+      padding: 0.5rem;
+    }
+
+    /* Mobile image styles */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Mobile text adjustments */
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!hamburger.contains(event.target) && !navLinks.contains(event.target)) {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('active');
+        }
+      });
+      
+      // Close menu when clicking on a link
+      navLinks.addEventListener('click', function(event) {
+        if (event.target.tagName === 'A') {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('active');
+        }
+      });
+    }
+  });
+</script>
+
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>About | Josh Kim - Product Designer</title>
 <meta name="generator" content="Jekyll v4.4.1" />
@@ -539,6 +794,86 @@
 {"@context":"https://schema.org","@type":"WebSite","description":"Product/UX Designer based in New Jersey with experience in delivering end-to-end UI &amp; UX for both mobile and web applications.","headline":"About","name":"Josh Kim - Product Designer","url":"http://localhost:4000/about/"}</script>
 <!-- End Jekyll SEO tag -->
  
+    <style>
+        .about-container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            margin-top: 80px;
+        }
+        
+        .left-column {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+        
+        .right-column {
+            max-width: 800px;
+        }
+        
+        .profile-section {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 4px solid #667eea;
+        }
+        
+        .quick-info {
+            margin-bottom: 2rem;
+        }
+        
+        .quick-info h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .quick-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .quick-info li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 0.9rem;
+        }
+        
+        .quick-info li:last-child {
+            border-bottom: none;
+        }
+        
+        @media (max-width: 768px) {
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .left-column {
+                position: static;
+                order: 2;
+            }
+            
+            .right-column {
+                order: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -546,6 +881,11 @@
     <nav class="nav">
   <div class="container nav-container">
     <a href="/" class="nav-logo">ㅎㄹ</a>
+    <button class="hamburger-menu" aria-label="Toggle navigation menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
     <ul class="nav-links">
       <li><a href="/" class="">Home</a></li>
       <li><a href="/about/" class="active">About</a></li>
@@ -555,9 +895,45 @@
   </div>
 </nav> 
     
-    <div class="main-container">
-        <div class="markdown-content">
-            <h1 id="about-me">About Me</h1>
+    <div class="about-container">
+        <div class="left-column">
+            <div class="profile-section">
+                <img src="/img/profile-pic.JPG" alt="Josh Kim" class="profile-image">
+                <h2>Josh Kim</h2>
+                <p>Product Designer</p>
+            </div>
+            
+            <div class="quick-info">
+                <h3>Quick Info</h3>
+                <ul>
+                    <li><strong>Location:</strong> NJNYC Area</li>
+                    <li><strong>Experience:</strong> Product Design</li>
+                    <li><strong>Background:</strong> UX & Software Development</li>
+                    <li><strong>Focus:</strong> Product Design</li>
+                </ul>
+            </div>
+            
+            <div class="quick-info">
+                <h3>Interests</h3>
+                <ul>
+                    <li>DIY Projects</li>
+                    <li>Gym & Fitness</li>
+                    <li>PC Gaming</li>
+                    <li>Food & Restaurants</li>
+                    <li>iOS Development</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="right-column">
+            <div class="markdown-content">
+                <style>
+.markdown-content, .container {
+  max-width: 800px;
+}
+</style>
+
+<h1 id="about-me">About Me</h1>
 
 <p>I studied computer science during my early years in undergrad. I realized how amazingly fun software development was; however, there was only so much a developer can do in creating awesome software for people. I then found UX Design at the intersection of software development and design, aimed to becoming the champion of the users. I instantly fell in love with everything the field stood for.</p>
 
@@ -597,6 +973,7 @@ I’ve worked on various projects with friends, and even had a startup in the pa
 
 <p>I’m always interested in new opportunities and collaborations. Feel free to reach out using the links in the footer below!</p>
 
+            </div>
         </div>
     </div>
     

@@ -24,9 +24,14 @@
   }
 
   .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
+  }
+
+  .markdown-content {
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .markdown-content table {
@@ -76,6 +81,7 @@
 
   .section {
     padding: 80px 0;
+    width: 100%;
   }
 
   .section h2 {
@@ -228,6 +234,43 @@
 
   .nav-links a:hover {
     color: #667eea;
+  }
+
+  /* Hamburger menu styles */
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+  }
+
+
+
+  .hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* Hamburger animation when active */
+  .hamburger-menu.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger-menu.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
   }
 
   .footer {
@@ -475,9 +518,117 @@
     margin: 1rem 0;
   }
 
-  .nav .container, .nav-container {
-    max-width: 800px;
+  .nav-container {
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 900px;
+      padding: 0 20px;
+    }
+
+    .markdown-content {
+      max-width: 700px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+
+    .markdown-content {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .section {
+      max-width: 100%;
+      margin: 0;
+      width: 100%;
+    }
+
+    /* Mobile table improvements */
+    table {
+      width: 100% !important;
+      font-size: 0.9rem;
+    }
+
+    td {
+      display: block;
+      width: 100% !important;
+      padding: 8px 0;
+      text-align: left;
+    }
+
+    /* Mobile image improvements */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Mobile text improvements */
+    h1 {
+      font-size: 2.2rem;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      line-height: 1.3;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 16px;
+    }
+
+    .markdown-content {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    /* Small mobile table improvements */
+    table {
+      font-size: 0.85rem;
+    }
+
+    td {
+      padding: 6px 0;
+    }
+
+    /* Small mobile text improvements */
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
   }
 
   @media (max-width: 768px) {
@@ -493,8 +644,48 @@
       font-size: 2rem;
     }
 
+    /* Mobile navigation styles */
+    .hamburger-menu {
+      display: flex;
+    }
+
+    .nav-container {
+      position: relative;
+    }
+
     .nav-links {
       display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 100;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .nav-links li {
+      list-style: none;
+    }
+
+    .nav-links a {
+      display: block;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #f8f9fa;
     }
 
     .grid {
@@ -520,8 +711,72 @@
     .project th, .project td {
       padding: 0.5rem;
     }
+
+    /* Mobile table styles for better readability */
+    .project table {
+      font-size: 0.9rem;
+    }
+
+    .project th, .project td {
+      padding: 0.5rem;
+    }
+
+    /* Mobile image styles */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Mobile text adjustments */
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!hamburger.contains(event.target) && !navLinks.contains(event.target)) {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('active');
+        }
+      });
+      
+      // Close menu when clicking on a link
+      navLinks.addEventListener('click', function(event) {
+        if (event.target.tagName === 'A') {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('active');
+        }
+      });
+    }
+  });
+</script>
+
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Works | Josh Kim - Product Designer</title>
 <meta name="generator" content="Jekyll v4.4.1" />
@@ -546,6 +801,11 @@
     <nav class="nav">
   <div class="container nav-container">
     <a href="/" class="nav-logo">ㅎㄹ</a>
+    <button class="hamburger-menu" aria-label="Toggle navigation menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
     <ul class="nav-links">
       <li><a href="/" class="">Home</a></li>
       <li><a href="/about/" class="">About</a></li>
@@ -557,26 +817,110 @@
     
     <div class="main-container">
         <div class="markdown-content">
-            <h1 id="works">Works</h1>
+            <style>
+.markdown-content, .container {
+  max-width: 800px;
+}
+</style>
+
+<h1 id="works">Works</h1>
 
 <p>A collection of my UX/UI design projects and case studies</p>
 
 <hr />
 
 <table width="100%" cellspacing="16">
+  <tr>
+    <td align="center" valign="top" width="33%">
+      <a href="/projects/pdp-optimization/">
+        <img src="/img/casestudy-pdp.png" alt="DSG Mobile App" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
+      </a>
+      <strong>IA Enhancement</strong><br />
+      Reprioritization of data points on our product details pages for $14M in incremental revenue.
+    </td>
+    <td align="center" valign="top" width="33%">
+      <a href="/projects/dsg-app/">
+        <img src="/img/casestudy-app.png" alt="DSG Mobile App" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
+      </a>
+      <strong>Mobile App Redesign</strong><br />
+      Rebuilding apps natively to garner over 3M MAU in just 3 years after relaunch.
+    </td>
+    <!-- <td align="center" valign="top" width="33%">
+      <a href="/projects/promo-engine/">
+        <img src="/img/design-system.png" alt="Design systems" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
+      </a>
+      <strong>Design Systems</strong><br/>
+      Empowering design and engineering to work faster and more efficiently.
+    </td> -->
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="33%">
+      <a href="/projects/promo-engine/">
+        <img src="/img/priceiq_logo.png" alt="Internal Promotion Engine" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
+      </a>
+      <strong>Internal Promotion Engine</strong><br />
+      Enhancing the workflow of existing internal users to create new promotions.
+    </td>
+    <td align="center" valign="top" width="33%">
+      <a href="/projects/dell-comparison/">
+        <img src="/img/project_1.png" alt="Dell Laptop Comparison Tool" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
+      </a>
+      <strong>Dell Laptop Comparison Tool</strong><br />
+      Enhancing the usability of Dell's tool through UX research and design methods
+    </td>
+    <td align="center" valign="top" width="33%">
+      <a href="/projects/detroit-services/">
+        <img src="/img/project_2.png" alt="Detroit's Public Services Map Tool" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
+      </a>
+      <strong>Detroit's Public Services Map Tool</strong><br />
+      Conducting UX research and analysis for design suggestions
+    </td>
+  </tr>
+</table>
+
+<hr />
+
+<h2 id="side-projects">Side Projects</h2>
+
+<p>I’m always willing to spend and expand my technical skillsets outside of work. My friends and I started and attempted many things. Some outright failed, some prevailed for a few years. Regardless of the outcomes, the process is what keeps us coming back to do it all over again.</p>
+
+<p><br /></p>
+
+<h3 id="salt-inc-2020-2024">Salt Inc (2020-2024)</h3>
+
+<p><img src="/img/salt1.png" alt="Salt Main Image" />
+Salt was a SaaS startup that my friends and I started, that provided a delivery service aggregator for restaurants.</p>
+
+<p>It was a super fun but difficult project, as I was the only team member with a design background.
+This product serviced on mobile tablet, desktop, and mobile apps for 2 different types of users: restaurant personnel and restaurant-goers.</p>
+
+<p>It was chaotic to keep track of personas: who I’m designing for, what their needs are, and their pain points of existing solutions.</p>
+
+<p>It was a true learning and humbling experience for me as I had to think about multiple aspects of our product’s ecosystem, and our clients’ ever-changing needs.</p>
+
+<p>At the time of shut-down, Salt was transacting over $500K in monthly sales from just 1 client.</p>
+<table width="100%" cellspacing="8">
   <tbody>
     <tr>
-      <td align="center" valign="top" width="33%"><a href="/projects/pdp-optimization/"> <img src="/img/casestudy-pdp.png" alt="DSG Mobile App" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" /> </a> <strong>IA Enhancement</strong><br /> Reprioritization of data points on our product details pages for $14M in incremental revenue.</td>
-      <td align="center" valign="top" width="33%"><a href="/projects/dsg-app/"> <img src="/img/casestudy-app.png" alt="DSG Mobile App" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" /> </a> <strong>Mobile App Redesign</strong><br /> Rebuilding apps natively to garner over 3M MAU in just 3 years after relaunch.</td>
-      <td align="center" valign="top" width="33%"><a href="/projects/promo-engine/"> <img src="/img/design-system.png" alt="Design systems" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" /> </a> <strong>Design Systems</strong><br /> Empowering design and engineering to work faster and more efficiently.</td>
+      <td align="center" width="50%"><img src="/img/salt2.png" alt="Salt Thumbnail 1" style="width:100%; max-width:300px; border-radius:8px; object-fit:cover; object-position:center;" /></td>
+      <td align="center" width="50%"><img src="/img/salt3.png" alt="Salt Thumbnail 2" style="width:100%; max-width:300px; border-radius:8px; object-fit:cover; object-position:center;" /></td>
     </tr>
     <tr>
-      <td align="center" valign="top" width="33%"><a href="/projects/promo-engine/"> <img src="/img/priceiq_logo.png" alt="Internal Promotion Engine" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" /> </a> <strong>Internal Promotion Engine</strong><br /> Enhancing the workflow of existing internal users to create new promotions.</td>
-      <td align="center" valign="top" width="33%"><a href="/projects/dell-comparison/"> <img src="/img/project_1.png" alt="Dell Laptop Comparison Tool" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" /> </a> <strong>Dell Laptop Comparison Tool</strong><br /> Enhancing the usability of Dell's tool through UX research and design methods</td>
-      <td align="center" valign="top" width="33%"><a href="/projects/detroit-services/"> <img src="/img/project_2.png" alt="Detroit's Public Services Map Tool" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" /> </a> <strong>Detroit's Public Services Map Tool</strong><br /> Conducting UX research and analysis for design suggestions</td>
+      <td align="center" width="50%"><img src="/img/salt4.png" alt="Salt Thumbnail 3" style="width:100%; max-width:300px; border-radius:8px; object-fit:cover; object-position:center;" /></td>
+      <td align="center" width="50%"><img src="/img/salt5.png" alt="Salt Thumbnail 4" style="width:100%; max-width:300px; border-radius:8px; object-fit:cover; object-position:center;" /></td>
     </tr>
   </tbody>
 </table>
+
+<p><br /></p>
+
+<h3 id="roots-academy-2018-2019">Roots Academy (2018-2019)</h3>
+
+<p>Afterschool academy to teach K-8th graders Mathematics, English, and Computer Science.</p>
+
+<p>I spearheaded a Python teaching course for students for a summer in 2018 for a class of 8 elementary and middle school students. Utilizing free online resources such as Google classroom and Google’s computer science teaching kits, I aimed to teach the students how fun programming can be and what they can utilize the Python language for.</p>
+
+<p>I taught that whole summer, and eventually had a student end up majoring in computer science in college! (I felt old)</p>
 
         </div>
     </div>

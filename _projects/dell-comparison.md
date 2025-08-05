@@ -10,6 +10,12 @@ skills: "UX Research, Iterative Design, Presenting, Client-facing"
 permalink: /projects/dell-comparison/
 ---
 
+<style>
+.markdown-content, .container {
+  max-width: 800px;
+}
+</style>
+
 ## Project Brief
 
 The Order Experience team at Dell is currently exploring ways to make products easier to buy.

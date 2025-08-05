@@ -6,6 +6,12 @@ hero_image: "/img/priceiq_logo.png"
 permalink: /projects/promo-engine/
 ---
 
+<style>
+.markdown-content, .container {
+  max-width: 800px;
+}
+</style>
+
 ![Promotion Engine](/img/priceiq_logo.png)
 
 ## Project Overview

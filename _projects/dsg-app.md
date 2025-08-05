@@ -6,6 +6,12 @@ hero_image: "/img/new_home.jpg"
 permalink: /projects/dsg-app/
 ---
 
+<style>
+.markdown-content, .container {
+  max-width: 800px;
+}
+</style>
+
 # Dick's Sporting Goods Mobile Apps
 
 A comprehensive modernization of the DSG mobile experience.

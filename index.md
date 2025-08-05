@@ -3,6 +3,12 @@ layout: default
 title: Welcome
 ---
 
+<style>
+.markdown-content, .container {
+  max-width: 800px;
+}
+</style>
+
 <br>
 # Hi there!
 ## My name is Josh Kim.
@@ -17,21 +23,7 @@ title: Welcome
 
 Recent production releases in the Dick's Mobile App world:
 
-<style>
-.no-shadow-table img {
-  box-shadow: none !important;
-  filter: none !important;
-}
-.no-shadow-table td {
-  box-shadow: none !important;
-  filter: none !important;
-}
-.no-shadow-table tr:not(:last-child) td {
-  border-bottom: 2px solid #e0e0e0;
-}
-</style>
-
-<table class="no-shadow-table" width="100%" cellspacing="12">
+<table width="100%" cellspacing="12">
   <tr>
     <td width="50%">
       <a href="/projects/pdp-optimization/">

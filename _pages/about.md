@@ -4,6 +4,12 @@ title: About
 permalink: /about/
 ---
 
+<style>
+.markdown-content, .container {
+  max-width: 800px;
+}
+</style>
+
 # About Me
 
 I studied computer science during my early years in undergrad. I realized how amazingly fun software development was; however, there was only so much a developer can do in creating awesome software for people. I then found UX Design at the intersection of software development and design, aimed to becoming the champion of the users. I instantly fell in love with everything the field stood for.

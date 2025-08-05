@@ -8,7 +8,7 @@ description: "Enhancing the IA of the PDP"
 
 <style>
 .markdown-content, .container {
-  max-width: 75%;
+  max-width: 800px;
 }
 </style>
 
@@ -46,6 +46,9 @@ A reprioritization of the most important data points of our product details page
     </td>
   </tr>
 </table>
+
+### Role
+Product Designer in an EPD team of 10+ Engineers, 1 Product Manager, and 1 Product Designer.
 
 ---
 

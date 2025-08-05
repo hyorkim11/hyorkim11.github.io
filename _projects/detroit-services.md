@@ -6,6 +6,12 @@ hero_image: "/img/project_2.png"
 permalink: /projects/detroit-services/
 ---
 
+<style>
+.markdown-content, .container {
+  max-width: 800px;
+}
+</style>
+
 ![Detroit Services](/img/dcity.jpg)
 
 ## Project Overview

@@ -4,6 +4,12 @@ title: Works
 permalink: /portfolio/
 ---
 
+<style>
+.markdown-content, .container {
+  max-width: 800px;
+}
+</style>
+
 # Works
 
 A collection of my UX/UI design projects and case studies
