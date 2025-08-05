@@ -126,9 +126,6 @@ Understanding who else shares the piece of the pie is important, as products are
 
 ---
 
-
-Add this before research section ends
-
 ### A Frankensteined Architecture
 The then-current state of the mobile apps was a hodgepodge of native and web experiences. Poorly-managed hybrid experiences often led users to many UX pitfalls. There wasn't a single fully-native experience flow in the mobile apps and thus left users frustrated and reluctant to come back.
 
@@ -147,8 +144,10 @@ The then-current state of the mobile apps was a hodgepodge of native and web exp
     </td>
   </tr>
 </table>
+It was time to bring the apps to 2020
 
-> **It was time to bring the apps to 2020.**
+
+> **Note:** This case study is currently under construction. But I have a case study presentation deck that I can share. Please feel free to contact me for it!
 
 ---
 
