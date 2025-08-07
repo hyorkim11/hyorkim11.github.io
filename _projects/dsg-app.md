@@ -80,13 +80,13 @@ I played a pivotal part in redesigning our 4 mobile applications:
 
 ## Design Process
 1. Understanding current states
-2. Visioning and aligning on outcomes
-3. Defining baselines
+2. Defining baselines
+3. Visioning and aligning on outcomes
 4. Design, test, launch, and iterate
 
 ---
 
-## Understanding Current States
+## 1. Understanding Current States
 
 During the initial phases of any project, I gather data and information about the product.
 
@@ -126,25 +126,59 @@ Understanding who else shares the piece of the pie is important, as products are
 
 ---
 
-### A Frankensteined Architecture
+### Current State = A Frankenstein!
 The then-current state of the mobile apps was a hodgepodge of native and web experiences. Poorly-managed hybrid experiences often led users to many UX pitfalls. There wasn't a single fully-native experience flow in the mobile apps and thus left users frustrated and reluctant to come back.
 
-**The app was basically a mobile website wrapped in a native app**
+> **TL;DR:** The app was basically a mobile website wrapped in a native app!
 
+---
+
+Let's take a deeper dive into the issues and areas of opportunities.
+
+<br>
+
+#### Web Wrapper Limitations
 <table style="background: none;">
   <tr>
-    <td valign="top" style="padding-right: 20px; border-bottom: none;">
+    <td valign="top" style="padding-right: 20px; border-bottom: none; width: 50%;">
       On the right is the then-current search results listing page.
-
-
-      Notice the amount of unnecessary information above where the fold of the mobile device would be. On a smaller device, users would not be able to see anything related to products above the fold.
+      Being a web-wrapped view, the view had two layers of top header navigation: native app header and the web view header right underneath. These two seemingly similar navigation bars had very different destinations in the app, which was very confusing for our users. In addition, the amount of information above the fold unrelated to the user's current primary goal/task inhibited users from easily seeing the related and more important information.
+      On a smaller device, users would not be able to see anything related to products above the fold.
     </td>
-    <td valign="top" style="text-align: top; border-bottom: none;">
+    <td valign="top" style="text-align: top; border-bottom: none; width: 50%;" rowspan="2">
       <img src="/img/old_srlp.jpg" alt="DSG App Pre-Update" style="max-width: 100%; height: auto; border-radius: 8px; text-align: top;">
     </td>
   </tr>
+  <tr>
+    <td valign="top" style="padding-right: 20px; border-bottom: none; width: 50%;">
+      Being a native app, it was common for users to be able to quickly switch between multiple contexts. For example, whilst shopping on one part of the app experience, switching context to their account information or past order histories. This singular and linear navigational flow was a big area of opportunity that served as a basis for many different user flows. 
+    </td>
+  </tr>
 </table>
-It was time to bring the apps to 2020
+
+<br>
+
+#### Lack of IA Structure
+<table style="background: none;">
+  <tr>
+    <td valign="top" style="text-align: top; border-bottom: none; width: 50%;" rowspan="2">
+      <img src="/img/old_home.jpg" alt="DSG Home Pre-Update" style="max-width: 100%; height: auto; border-radius: 8px; text-align: top;">
+    </td>
+    <td valign="top" style="border-bottom: none; width: 50%;">
+      On the left was the main landing view of the mobile app back then. You can see the hamburger menu that was placed at the top left of the header.
+      Below is the expanded hamburger menu the users were presented with once you tapped on it. It was a culmination of literally throwing together all the features and intra-app destinations in one menu. Even within the menu, there were no logical groupings nor particular prioritizations applied.
+    </td>
+  </tr>
+  <tr>
+  <td valign="top" style="text-align: top; border-bottom: none; width: 50%;">
+      <img src="/img/old_IA.png" alt="DSG IA Pre-Update" style="max-width: 100%; height: auto; border-radius: 8px; text-align: top;">
+    </td>
+  </tr>
+</table>
+
+---
+
+### 2. Defining Baselines
 
 
 > **Note:** This case study is currently under construction. But I have a case study presentation deck that I can share. Please feel free to contact me for it!
