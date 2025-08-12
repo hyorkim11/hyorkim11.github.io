@@ -788,11 +788,11 @@
 <meta property="og:url" content="http://localhost:4000/projects/pdp-optimization/" />
 <meta property="og:site_name" content="Josh Kim - Product Designer" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-08-11T22:54:50-04:00" />
+<meta property="article:published_time" content="2025-08-11T23:51:19-04:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="PDP Optimization" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-11T22:54:50-04:00","datePublished":"2025-08-11T22:54:50-04:00","description":"Enhancing the IA of the PDP","headline":"PDP Optimization","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/pdp-optimization/"},"url":"http://localhost:4000/projects/pdp-optimization/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-11T23:51:19-04:00","datePublished":"2025-08-11T23:51:19-04:00","description":"Enhancing the IA of the PDP","headline":"PDP Optimization","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/pdp-optimization/"},"url":"http://localhost:4000/projects/pdp-optimization/"}</script>
 <!-- End Jekyll SEO tag -->
  
 </head>
@@ -826,7 +826,108 @@
 .markdown-content, .container {
   max-width: 800px;
 }
+
+/* Sticky Bookmark Styles */
+.bookmark-container {
+  position: fixed;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  padding: 2rem;
+  max-width: 300px;
+  max-height: 70vh;
+  overflow-y: auto;
+  height: fit-content;
+}
+
+.bookmark-container h4 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.bookmark-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bookmark-links li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.bookmark-links li:last-child {
+  border-bottom: none;
+}
+
+.bookmark-links a {
+  display: block;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+  transition: all 0.2s ease;
+  line-height: 1.3;
+  padding: 0;
+}
+
+.bookmark-links a:hover {
+  background: transparent;
+  color: #667eea;
+  transform: none;
+}
+
+.bookmark-links a.active {
+  background: transparent;
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .bookmark-container {
+    display: none;
+  }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add scroll offset for fixed header */
+html {
+  scroll-padding-top: 80px;
+}
 </style>
+
+<div class="bookmark-container">
+  <h4 id="quick-navigation">📖 Quick Navigation</h4>
+  <ul class="bookmark-links">
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#my-role-contributions">My Role &amp; Contributions</a></li>
+    <li><a href="#challenges">Challenges</a></li>
+    <li><a href="#design-process">Design Process</a></li>
+    <li><a href="#1-identifying-areas-of-opportunities">  1. Identifying Areas of Opportunities</a></li>
+    <li><a href="#2-comparative-analysis">  2. Comparative Analysis</a></li>
+    <li><a href="#3-design-potential-solution">  3. Design Potential Solution</a></li>
+    <li><a href="#4-present-findings-and-recommendation">  4. Present Findings</a></li>
+    <li><a href="#5-prepare-design-comps-for-engineering-qa-review">  5. Prepare Designs</a></li>
+    <li><a href="#6-qa-test">  6. QA Test</a></li>
+    <li><a href="#7-launch-monitor">  7. Launch &amp; Monitor</a></li>
+    <li><a href="#before-and-afters">Before &amp; Afters</a></li>
+    <li><a href="#takeaways-next-steps">Takeaways &amp; Next Steps</a></li>
+  </ul>
+</div>
 
 <h1 id="pdp-optimization">PDP Optimization</h1>
 
@@ -991,7 +1092,7 @@ I studied the main portions of the views of the PDPs to understand why they may 
 
 <p>The above product information cluster helped us solve a few UX issues, address stakeholder needs, all the while maintaining the best IA hierarchy above the fold:</p>
 
-<p><br /></p>
+<hr />
 
 <h4 id="business-requirement-highlighting-product-imagery">Business Requirement: Highlighting Product Imagery</h4>
 <p><img src="/img/pdpopt-beforeafter.png" alt="Comp Analysis" />
@@ -1001,7 +1102,7 @@ Our eComm business stakeholders have expressed their need in the app better high
 
 <p>Product imagery doesn’t stop there at the top! We’ve also enlarged the thumbnails for our colorway selectors to give our users a better and more accurate representations of product colorways.</p>
 
-<p><br /></p>
+<hr />
 
 <h4 id="general-ux-enhancements">General UX Enhancements</h4>
 <p><img src="/img/pdpopt-beforeafter2.png" alt="Comp Analysis" />
@@ -1011,7 +1112,7 @@ In addition to enlarging the product thumbnails and increasing the selection cue
 
 <p><br /></p>
 
-<h3 id="4-present-findings-and-recommendation">4. Present Findings and Recommendation</h3>
+<h3 id="4-present-findings">4. Present Findings</h3>
 <p>After many rounds of design syncs and a few design alignment &amp; critique sessions with other designers on our team and the web teams, the designs were semi-finalized.
 Our product manager and I then took said design recommendations to our engineers and walked them through all the details and flows.</p>
 
@@ -1019,7 +1120,7 @@ Our product manager and I then took said design recommendations to our engineers
 
 <p><br /></p>
 
-<h3 id="5-prepare-design-comps-for-engineering--qa-review">5. Prepare design comps for engineering &amp; QA review</h3>
+<h3 id="5-prepare-designs">5. Prepare Designs</h3>
 
 <p>We usually take as many sessions as needed to get everyone involved in the building and testing of the designed solutions to understand what is being proposed. In addition to this semi-final walkthroughs, we do bring in engineers to sit in on our design reviews ahead of time to ensure we’re covering all the edge cases and considering technical limitations.</p>
 
@@ -1045,6 +1146,24 @@ Our product manager and I then took said design recommendations to our engineers
 
 <p><br /></p>
 
+<h3 id="before--afters">Before &amp; Afters</h3>
+
+<h4 id="pdp-landing-view">PDP Landing View</h4>
+<p><img src="/img/pdpopt-beforeafter.png" alt="PDP Optimization Landing View BnA" />
+The top of the IA of the PDP has been reworked to prioritize the product information that our users have ranked the highest in terms of importance: product image, name, price, sales/promotions, and reviews.</p>
+
+<p>We maintained the common actions on PDPs such as share and favorite at the top header. As mentioned previously, we displayed more product imagery to increase visibility to rich content such as product videos.</p>
+
+<hr />
+
+<h4 id="pdp-body-view">PDP Body View</h4>
+<p><img src="/img/pdpopt-beforeafter2.png" alt="PDP Optimization Landing View BnA2" />
+In addition to the top IA restructuring, we updated the UI of all the interactive elements for a visual uplift. The product attribute selections such as the colors and size pickers were enlarged for enhanced legibility, scannability, and tappability.</p>
+
+<p>Another big part of the visual update were in the fulfillment tiles such as Ship, Pickup in Store, and Same Day. There were lots of intricate display logic and data being sent back and forth for the fulfillment options, so a close collaboration and extensive design specifications were needed.</p>
+
+<p><br /></p>
+
 <h3 id="takeaways--next-steps">Takeaways &amp; Next Steps</h3>
 <p>Designers are often asked to cut back on designs, and I feel like its a constant battle with myself to not get too carried away with a feature or a specific piece of a UI element. But there are those times when that far-future vision is needed to sell! I guess I will forever catch myself between the two “modes” of thinking when designing 🥲.</p>
 
@@ -1052,9 +1171,52 @@ Our product manager and I then took said design recommendations to our engineers
 
 <p>The realities of being understaffed with ever-rising expectations of deliverables by the business, we were/are not able to dig further into the results and conduct additional refinements. But had we the time, we would dig into usage metrics at a component level for the entirety of the PDP and set a baseline, and begin iterating on the components to net the best results.</p>
 
-<blockquote>
-  <p><strong>Note:</strong> This case study is under construction. Last updated 12:12AM - 8/1/25</p>
-</blockquote>
+<script>
+// Generate IDs for headlines and update bookmark links
+document.addEventListener('DOMContentLoaded', function() {
+  // Generate IDs for all headlines
+  const headlines = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  headlines.forEach(headline => {
+    const text = headline.textContent.trim();
+    const id = text.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-');
+    headline.id = id;
+  });
+
+  // Update bookmark links to use generated IDs
+  const bookmarkLinks = document.querySelectorAll('.bookmark-links a');
+  bookmarkLinks.forEach(link => {
+    const text = link.textContent.trim();
+    const id = text.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-');
+    link.href = '#' + id;
+  });
+
+  // Highlight active bookmark link on scroll
+  const sections = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  const navLinks = document.querySelectorAll('.bookmark-links a');
+
+  function updateActiveLink() {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (window.pageYOffset >= sectionTop - 200) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveLink);
+  updateActiveLink(); // Call once on load
+});
+</script>
+
 
       </div>
     </div>

@@ -10,7 +10,108 @@ description: "Enhancing the IA of the PDP"
 .markdown-content, .container {
   max-width: 800px;
 }
+
+/* Sticky Bookmark Styles */
+.bookmark-container {
+  position: fixed;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  padding: 2rem;
+  max-width: 300px;
+  max-height: 70vh;
+  overflow-y: auto;
+  height: fit-content;
+}
+
+.bookmark-container h4 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.bookmark-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bookmark-links li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.bookmark-links li:last-child {
+  border-bottom: none;
+}
+
+.bookmark-links a {
+  display: block;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+  transition: all 0.2s ease;
+  line-height: 1.3;
+  padding: 0;
+}
+
+.bookmark-links a:hover {
+  background: transparent;
+  color: #667eea;
+  transform: none;
+}
+
+.bookmark-links a.active {
+  background: transparent;
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .bookmark-container {
+    display: none;
+  }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add scroll offset for fixed header */
+html {
+  scroll-padding-top: 80px;
+}
 </style>
+
+<div class="bookmark-container">
+  <h4>📖 Quick Navigation</h4>
+  <ul class="bookmark-links">
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#my-role-contributions">My Role & Contributions</a></li>
+    <li><a href="#challenges">Challenges</a></li>
+    <li><a href="#design-process">Design Process</a></li>
+    <li><a href="#1-identifying-areas-of-opportunities">&nbsp;&nbsp;1. Identifying Areas of Opportunities</a></li>
+    <li><a href="#2-comparative-analysis">&nbsp;&nbsp;2. Comparative Analysis</a></li>
+    <li><a href="#3-design-potential-solution">&nbsp;&nbsp;3. Design Potential Solution</a></li>
+    <li><a href="#4-present-findings-and-recommendation">&nbsp;&nbsp;4. Present Findings</a></li>
+    <li><a href="#5-prepare-design-comps-for-engineering-qa-review">&nbsp;&nbsp;5. Prepare Designs</a></li>
+    <li><a href="#6-qa-test">&nbsp;&nbsp;6. QA Test</a></li>
+    <li><a href="#7-launch-monitor">&nbsp;&nbsp;7. Launch & Monitor</a></li>
+    <li><a href="#before-and-afters">Before & Afters</a></li>
+    <li><a href="#takeaways-next-steps">Takeaways & Next Steps</a></li>
+  </ul>
+</div>
 
 # PDP Optimization
 
@@ -165,7 +266,7 @@ This small collection of datapoints created into a single component is capable o
 
 The above product information cluster helped us solve a few UX issues, address stakeholder needs, all the while maintaining the best IA hierarchy above the fold:
 
-<br>
+---
 
 #### Business Requirement: Highlighting Product Imagery
 ![Comp Analysis](/img/pdpopt-beforeafter.png)
@@ -175,7 +276,7 @@ With the new design (right) we showcase additional richer product media in thumb
 
 Product imagery doesn't stop there at the top! We've also enlarged the thumbnails for our colorway selectors to give our users a better and more accurate representations of product colorways.
 
-<br>
+---
 
 #### General UX Enhancements
 ![Comp Analysis](/img/pdpopt-beforeafter2.png)
@@ -185,7 +286,7 @@ Although a fast-follow to the MVP launch, the fulfillment/delivery tile update w
 
 <br>
 
-### 4. Present Findings and Recommendation
+### 4. Present Findings
 After many rounds of design syncs and a few design alignment & critique sessions with other designers on our team and the web teams, the designs were semi-finalized.
 Our product manager and I then took said design recommendations to our engineers and walked them through all the details and flows.
 
@@ -193,7 +294,7 @@ If a project has direct eyes of the business stakeholders, we would very much le
 
 <br>
 
-### 5. Prepare design comps for engineering & QA review
+### 5. Prepare Designs
 
 We usually take as many sessions as needed to get everyone involved in the building and testing of the designed solutions to understand what is being proposed. In addition to this semi-final walkthroughs, we do bring in engineers to sit in on our design reviews ahead of time to ensure we're covering all the edge cases and considering technical limitations.
 
@@ -219,6 +320,24 @@ Another month or so after, we were able to attribute an incremental lift in reve
 
 <br>
 
+### Before & Afters
+
+#### PDP Landing View
+![PDP Optimization Landing View BnA](/img/pdpopt-beforeafter.png)
+The top of the IA of the PDP has been reworked to prioritize the product information that our users have ranked the highest in terms of importance: product image, name, price, sales/promotions, and reviews.
+
+We maintained the common actions on PDPs such as share and favorite at the top header. As mentioned previously, we displayed more product imagery to increase visibility to rich content such as product videos.
+
+---
+
+#### PDP Body View
+![PDP Optimization Landing View BnA2](/img/pdpopt-beforeafter2.png)
+In addition to the top IA restructuring, we updated the UI of all the interactive elements for a visual uplift. The product attribute selections such as the colors and size pickers were enlarged for enhanced legibility, scannability, and tappability.
+
+Another big part of the visual update were in the fulfillment tiles such as Ship, Pickup in Store, and Same Day. There were lots of intricate display logic and data being sent back and forth for the fulfillment options, so a close collaboration and extensive design specifications were needed. 
+
+<br>
+
 ### Takeaways & Next Steps
 Designers are often asked to cut back on designs, and I feel like its a constant battle with myself to not get too carried away with a feature or a specific piece of a UI element. But there are those times when that far-future vision is needed to sell! I guess I will forever catch myself between the two "modes" of thinking when designing 🥲.
 
@@ -226,4 +345,48 @@ I learned first-hand (again!) that there is truth in the popular psychological p
 
 The realities of being understaffed with ever-rising expectations of deliverables by the business, we were/are not able to dig further into the results and conduct additional refinements. But had we the time, we would dig into usage metrics at a component level for the entirety of the PDP and set a baseline, and begin iterating on the components to net the best results. 
 
-> **Note:** This case study is under construction. Last updated 12:12AM - 8/1/25
+<script>
+// Generate IDs for headlines and update bookmark links
+document.addEventListener('DOMContentLoaded', function() {
+  // Generate IDs for all headlines
+  const headlines = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  headlines.forEach(headline => {
+    const text = headline.textContent.trim();
+    const id = text.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-');
+    headline.id = id;
+  });
+
+  // Update bookmark links to use generated IDs
+  const bookmarkLinks = document.querySelectorAll('.bookmark-links a');
+  bookmarkLinks.forEach(link => {
+    const text = link.textContent.trim();
+    const id = text.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-');
+    link.href = '#' + id;
+  });
+
+  // Highlight active bookmark link on scroll
+  const sections = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  const navLinks = document.querySelectorAll('.bookmark-links a');
+
+  function updateActiveLink() {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (window.pageYOffset >= sectionTop - 200) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveLink);
+  updateActiveLink(); // Call once on load
+});
+</script>
