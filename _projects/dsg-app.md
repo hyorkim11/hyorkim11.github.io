@@ -14,27 +14,26 @@ permalink: /projects/dsg-app/
 /* Sticky Bookmark Styles */
 .bookmark-container {
   position: fixed;
-  left: 20px;
+  left: 40px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1000;
-  background: white;
+  background: #f8f9fa;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-  padding: 16px;
-  max-width: 250px;
+  border: 1px solid #e9ecef;
+  padding: 2rem;
+  max-width: 300px;
   max-height: 70vh;
   overflow-y: auto;
-  border: 1px solid #e0e0e0;
+  height: fit-content;
 }
 
 .bookmark-container h4 {
-  margin: 0 0 12px 0;
-  font-size: 14px;
-  color: #333;
-  font-weight: 600;
-  border-bottom: 2px solid #007bff;
-  padding-bottom: 8px;
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .bookmark-links {
@@ -44,29 +43,37 @@ permalink: /projects/dsg-app/
 }
 
 .bookmark-links li {
-  margin-bottom: 8px;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.bookmark-links li:last-child {
+  border-bottom: none;
 }
 
 .bookmark-links a {
   display: block;
-  padding: 6px 8px;
   color: #555;
   text-decoration: none;
-  font-size: 13px;
-  border-radius: 6px;
+  font-size: 0.9rem;
+  border-radius: 0;
   transition: all 0.2s ease;
   line-height: 1.3;
+  padding: 0;
 }
 
 .bookmark-links a:hover {
-  background: #f8f9fa;
-  color: #007bff;
-  transform: translateX(2px);
+  background: transparent;
+  color: #667eea;
+  transform: none;
 }
 
 .bookmark-links a.active {
-  background: #007bff;
-  color: white;
+  background: transparent;
+  color: #667eea;
+  font-weight: 600;
 }
 
 /* Responsive adjustments */
@@ -102,7 +109,7 @@ html {
     <li><a href="#overview">Overview</a></li>
     <li><a href="#challenges">Challenges</a></li>
     <li><a href="#design-process">Design Process</a></li>
-    <li><a href="#1-understanding-current-states">&nbsp;&nbsp; 1. Current States</a></li>
+    <li><a href="#1-understanding-current-states">1. Current States</a></li>
     <li><a href="#user-flows">&nbsp;&nbsp;1a. User Flows</a></li>
     <li><a href="#service-blueprints">&nbsp;&nbsp;1b. Service Blueprints</a></li>
     <li><a href="#identifying-stakeholders">&nbsp;&nbsp;1c. Stakeholders</a></li>
@@ -112,6 +119,7 @@ html {
     <li><a href="#defining-user-base">&nbsp;&nbsp;2b. User Base</a></li>
     <li><a href="#3-visioning-and-aligning-on-outcomes">3. Visioning</a></li>
     <li><a href="#4-design-test-launch-and-iterate">4. Design & Test</a></li>
+    <li><a href="#before-and-afters">Before & Afters</a></li>
   </ul>
 </div>
 
@@ -409,16 +417,6 @@ Ever since that launch, we've been continuously monitoring and making improvemen
 Here are some of the main views that have been newly designed and pushed to production, and their older versions for comparison.
 
 ### Main Landing View
-
-#### Revamped Global IA
-Original hybrid app consisted of many nested experiences inside one hamburger menu. We dedicated a few bottom navigation tabs for some of our major experiences to flatten the IA and give ample real estate for users to complete tasks in their dedicated spaces.
-
-#### Hero Component Wins
-Our websites always served up a large hero image for marketing and advertisement purposes. Defining and cleaning up the main landing view of our apps gave us room to keep the omni-experience consistent.
-
-#### Increased Speed to Product
-Instead of relying only on the search bar to help users get to products, we took our taxonomy up-front and center.
-
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
   <tr>
     <td style="width: 50%; padding: 20px; vertical-align: center; text-align: center; border-bottom: none;">
@@ -431,6 +429,62 @@ Instead of relying only on the search bar to help users get to products, we took
     </td>
   </tr>
 </table>
+
+#### Revamped Global IA
+Original hybrid app consisted of many nested experiences inside one hamburger menu. We dedicated a few bottom navigation tabs for some of our major experiences to flatten the IA and give ample real estate for users to complete tasks in their dedicated spaces.
+
+#### Hero Component Wins
+Our websites always served up a large hero image for marketing and advertisement purposes. Defining and cleaning up the main landing view of our apps gave us room to keep the omni-experience consistent.
+
+#### Increased Speed to Product
+Instead of relying only on the search bar to help users get to products, we took our taxonomy up-front and center.
+
+<br>
+<br>
+
+### Search Results View
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+  <tr>
+    <td style="width: 50%; padding: 20px; vertical-align: center; text-align: center; border-bottom: none;">
+      <img src="/img/old-srlp.png" alt="Old SRLP Design" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: none;">
+      <p style="margin-top: 10px; font-style: italic; color: #666;">Before</p>
+    </td>
+    <td style="width: 50%; padding: 20px; vertical-align: center; text-align: center; border-bottom: none;">
+      <img src="/img/new-srlp.png" alt="New SRLP Design" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: none;">
+      <p style="margin-top: 10px; font-style: italic; color: #666;">After</p>
+    </td>
+  </tr>
+</table>
+
+#### Fully Native
+Going fully native meant we have full control over the global and local navigation of our users, wherever they were in the app.
+
+#### Straight to the point
+With all the web-tied components out of the way, we were able to provide our users with their search results that much quicker and up-front!
+
+#### New beginnings
+The MVP was far from perfect, but it proved to be a solid basis for us to continually test and improve upon.
+
+<br>
+<br>
+
+### Product Detail View
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+  <tr>
+    <td style="width: 50%; padding: 20px; vertical-align: center; text-align: center; border-bottom: none;">
+      <img src="/img/old-pdp.png" alt="Old PDP Design" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: none;">
+      <p style="margin-top: 10px; font-style: italic; color: #666;">Before</p>
+    </td>
+    <td style="width: 50%; padding: 20px; vertical-align: center; text-align: center; border-bottom: none;">
+      <img src="/img/new-pdp.png" alt="New PDP Design" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: none;">
+      <p style="margin-top: 10px; font-style: italic; color: #666;">After</p>
+    </td>
+  </tr>
+</table>
+
+#### Fully Native
+Benefits of not needing to display additional navigational elements helped us visually prioritize the most important elements of this view–product related information! For example, in the legacy PDP, users couldn't see anything other than part of the product image well below the fold. 
+
 
 ---
 
@@ -447,8 +501,5 @@ Managing expectations with stakeholders and educating them wherever necessary. N
 Understanding code and knowing how to effectively communicate with engineering helped me immensely throughout all my projects. Effective communication is helpful in any setting, but in tech, especially between engineering and other disciplines, is an underestimated skillset. Being able to talk the same 'language' as engineers/developers makes a world of a difference when talking design-to-code (for super obvious reasons).
 
 
-
-
-
-> **Note:** This case study is currently under construction. But I have a case study presentation deck that I can share. Please feel free to contact me for it!
+> **Note:** This case study is actively under construction. Reach out for any additional information you need/want. thank you!
 
