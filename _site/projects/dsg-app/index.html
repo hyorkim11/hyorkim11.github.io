@@ -788,11 +788,11 @@
 <meta property="og:url" content="http://localhost:4000/projects/dsg-app/" />
 <meta property="og:site_name" content="Josh Kim - Product Designer" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-08-07T21:51:37-04:00" />
+<meta property="article:published_time" content="2025-08-11T21:37:10-04:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Dick’s Sporting Goods Mobile App" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-07T21:51:37-04:00","datePublished":"2025-08-07T21:51:37-04:00","description":"DSG Mobile Apps’ modernization facelift!","headline":"Dick’s Sporting Goods Mobile App","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/dsg-app/"},"url":"http://localhost:4000/projects/dsg-app/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-11T21:37:10-04:00","datePublished":"2025-08-11T21:37:10-04:00","description":"DSG Mobile Apps’ modernization facelift!","headline":"Dick’s Sporting Goods Mobile App","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/dsg-app/"},"url":"http://localhost:4000/projects/dsg-app/"}</script>
 <!-- End Jekyll SEO tag -->
  
 </head>
@@ -901,6 +901,15 @@ html {
 html {
   scroll-padding-top: 80px; /* Adjust this value based on your header height */
 }
+
+/* Responsive table styles */
+@media (max-width: 768px) {
+  table td {
+    width: 100% !important;
+    display: block;
+    margin-bottom: 15px;
+  }
+}
 </style>
 
 <div class="bookmark-container">
@@ -917,6 +926,8 @@ html {
     <li><a href="#2-defining-baselines">2. Defining Baselines</a></li>
     <li><a href="#comparative-analysis">  2a. Comp Analysis</a></li>
     <li><a href="#defining-user-base">  2b. User Base</a></li>
+    <li><a href="#3-visioning-and-aligning-on-outcomes">3. Visioning</a></li>
+    <li><a href="#4-design-test-launch-and-iterate">4. Design &amp; Test</a></li>
   </ul>
 </div>
 
@@ -994,8 +1005,6 @@ document.addEventListener('DOMContentLoaded', function() {
   <li>Golf Galaxy - Android</li>
 </ul>
 
-<hr />
-
 <h3 id="performance-metrics">Performance Metrics</h3>
 
 <h4 id="as-of-2022-yoy">As of 2022 (YoY)</h4>
@@ -1010,7 +1019,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <li>Sign-in rate 94.4%</li>
 </ul>
 
-<hr />
+<p><br /></p>
 
 <h2 id="overview">Overview</h2>
 
@@ -1033,7 +1042,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <li>Limited resources &amp; tight deadlines</li>
 </ul>
 
-<hr />
+<p><br /></p>
 
 <h2 id="design-process">Design Process</h2>
 <ol>
@@ -1065,7 +1074,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <p><img src="/img/app-user-flow.jpg" alt="App User Flow" /></p>
 
-<hr />
+<p><br /></p>
 
 <h4 id="service-blueprints">Service Blueprints</h4>
 <p><img src="/img/app-service-blueprint.jpg" alt="App Service Blueprint" /></p>
@@ -1081,13 +1090,13 @@ document.addEventListener('DOMContentLoaded', function() {
   <li>teams &amp; stakeholders responsible</li>
 </ul>
 
-<hr />
+<p><br /></p>
 
 <h4 id="identifying-stakeholders">Identifying Stakeholders</h4>
 <p><img src="/img/app-stakeholder-map.jpg" alt="App Stakeholder Mapping" />
 Understanding who else shares the piece of the pie is important, as products aren’t made in silos. The mobile app was a special case, because the business hadn’t invested much into them. However, once we asked our immediate stakeholders, it seemed like everyone had some say in what happens with and within the app.</p>
 
-<hr />
+<p><br /></p>
 
 <h4 id="current-state-summary">Current State Summary</h4>
 <p>The then-current state of the mobile apps was a hodgepodge of native and web experiences. Poorly-managed hybrid experiences often led users to many UX pitfalls. There wasn’t a single fully-native experience flow in the mobile apps and thus left users frustrated and reluctant to come back.</p>
@@ -1096,12 +1105,9 @@ Understanding who else shares the piece of the pie is important, as products are
 TL;DR: The app was basically a mobile website wrapped in a native app!
 
 </code></pre>
-
-<hr />
-
 <p>Let’s take a deeper dive into the issues and areas of opportunities.</p>
 
-<hr />
+<p><br /></p>
 
 <h4 id="web-wrapper-limitations">Web Wrapper Limitations</h4>
 <table style="background: none;">
@@ -1121,8 +1127,7 @@ TL;DR: The app was basically a mobile website wrapped in a native app!
     </td>
   </tr>
 </table>
-
-<hr />
+<p><br /></p>
 
 <h4 id="lack-of-ia-structure">Lack of IA Structure</h4>
 <table style="background: none;">
@@ -1152,6 +1157,8 @@ TL;DR: The app was basically a mobile website wrapped in a native app!
 
 <p>In addition to features, we compared the views step by step for all of our competitors to ensure we weren’t forgetting any features during every step of the shopping journey for our users.</p>
 
+<p><br /></p>
+
 <h4 id="comparative-analysis">Comparative Analysis</h4>
 <p><img src="/img/competitive-analysis-on-native1.png" alt="Competitive Analysis 1" />
 <em>(Above) Identifying common features and patterns helped us to establish a clear baseline for a native shopping app</em></p>
@@ -1162,7 +1169,9 @@ TL;DR: The app was basically a mobile website wrapped in a native app!
 <p><img src="/img/competitive-analysis-on-native3.png" alt="Competitive Analysis 3" />
 <em>(Above) User flows and general IA comparisons</em></p>
 
-<hr />
+<p>After looking at enough flows and views, you start to see a general pattern and rough outline of a shopping flow. Comfortable and familiar shopping flow should be what we aim for.</p>
+
+<p><br /></p>
 
 <h4 id="defining-user-base">Defining User Base</h4>
 
@@ -1187,6 +1196,85 @@ Understanding the current userbase helped us consider which other competitors to
 <hr />
 
 <h3 id="3-visioning-and-aligning-on-outcomes">3. Visioning and aligning on outcomes</h3>
+
+<p>After a rough outline of a shopping user flow has been defined, we put screens to each step of the flow and presented out our research findings to the business.</p>
+
+<p>We presented out a shopping journey that we thought painted a good picture of where we should aim to be to stay competitive in the market. We needed to remind the business that the release/rollout wouldn’t be immediate but that the updates would come in large chunks, followed by smaller updates.</p>
+
+<p>Updating a product in chunks keeps user-facing changes minimal and gives users ample time to adjust to the changes and lowers barriers to entry to the updates.</p>
+
+<hr />
+
+<h3 id="4-design-test-launch-and-iterate">4. Design, Test, Launch, and Iterate</h3>
+<p>This is when we iterated on the designs previously showcased to our stakeholders. After many design critique, jam, and brainstorming sessions, we landed on design we were comfortable with continuing with.</p>
+
+<p>We created high-fidelity tappable prototypes via Figma to user test our MVP designs. We conducted an unmoderated user test via User Testing, and asked the test participants to carry on shopping-related tasks on their phones:</p>
+
+<ol>
+  <li>Searching for a product</li>
+  <li>Accessing product information</li>
+  <li>Adding product(s) to cart</li>
+  <li>Checking out</li>
+  <li>Finding order information/history</li>
+</ol>
+
+<p><img src="/img/pre-release-ut.pdf" alt="Pre-Release User Test" />
+<em>After conducting the user test, we gather the results and synthesize them accordingly</em></p>
+
+<p>We tested with 30 iOS users and 30 Android users to ensure our high-level flows followed common mobile app shopping patterns that the industry had established.
+<img src="/img/pre-release-ut-result.png" alt="Pre-Release User Test Results" />
+It wasn’t anything super fancy, but it was honest work, and our test participants approved of our newly designed experiences.It felt relieving to have our designs validated.</p>
+
+<p><br /></p>
+
+<h4 id="launch-and-iterate">Launch and Iterate</h4>
+
+<p>When the development was done, the whole team spent weeks to test our end-to-end experiences. We caught many bugs along the way, but squashed 99% of them and de-prioritized the remainder for another sprint post-MVP.</p>
+
+<p>Ever since that launch, we’ve been continuously monitoring and making improvements to our apps to this day.</p>
+
+<hr />
+
+<h2 id="before-and-afters">Before and Afters</h2>
+<p>Here are some of the main views that have been newly designed and pushed to production, and their older versions for comparison.</p>
+
+<h3 id="main-landing-view">Main Landing View</h3>
+
+<h4 id="revamped-global-ia">Revamped Global IA</h4>
+<p>Original hybrid app consisted of many nested experiences inside one hamburger menu. We dedicated a few bottom navigation tabs for some of our major experiences to flatten the IA and give ample real estate for users to complete tasks in their dedicated spaces.</p>
+
+<h4 id="hero-component-wins">Hero Component Wins</h4>
+<p>Our websites always served up a large hero image for marketing and advertisement purposes. Defining and cleaning up the main landing view of our apps gave us room to keep the omni-experience consistent.</p>
+
+<h4 id="increased-speed-to-product">Increased Speed to Product</h4>
+<p>Instead of relying only on the search bar to help users get to products, we took our taxonomy up-front and center.</p>
+
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+  <tr>
+    <td style="width: 50%; padding: 20px; vertical-align: center; text-align: center; border-bottom: none;">
+      <img src="/img/old-home.png" alt="Old Home Design" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: none;" />
+      <p style="margin-top: 10px; font-style: italic; color: #666;">Before: Original hybrid app design</p>
+    </td>
+    <td style="width: 50%; padding: 20px; vertical-align: center; text-align: center; border-bottom: none;">
+      <img src="/img/new-home.png" alt="New Home Design" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: none;" />
+      <p style="margin-top: 10px; font-style: italic; color: #666;">After: Revamped main landing view</p>
+    </td>
+  </tr>
+</table>
+
+<hr />
+
+<h3 id="takeaways">Takeaways</h3>
+
+<p>Looking back at this enormous project, I learned how to translate desktop/web experiences to native mobile ones. Inherently, desktop experiences have to be different because they’re presented and interacted with differently by users.</p>
+
+<p>Interactive vs non-interactive elements, tappable areas, native iconography,  device nuances, SDK patterns, and etc. There were countless differences we had to consider, whilst maintaining the same back-end services as that of our desktop experiences.</p>
+
+<p>I also learned to leverage people for existing knowledge. Countless side chats, DM’s and meetings were had in order for me to understand what they knew about their respective spaces. Communication is key… but really.</p>
+
+<p>Managing expectations with stakeholders and educating them wherever necessary. Not everyone in the company is as tech-savvy as us in tech. This is one of the first lessons I learned a while back, and put to action while interacting with business and marketing folks that were involved in this journey. I made sure to simplify discussions so anyone and everyone could understand what was being discussed.</p>
+
+<p>Understanding code and knowing how to effectively communicate with engineering helped me immensely throughout all my projects. Effective communication is helpful in any setting, but in tech, especially between engineering and other disciplines, is an underestimated skillset. Being able to talk the same ‘language’ as engineers/developers makes a world of a difference when talking design-to-code (for super obvious reasons).</p>
 
 <blockquote>
   <p><strong>Note:</strong> This case study is currently under construction. But I have a case study presentation deck that I can share. Please feel free to contact me for it!</p>

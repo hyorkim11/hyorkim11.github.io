@@ -85,6 +85,15 @@ html {
 html {
   scroll-padding-top: 80px; /* Adjust this value based on your header height */
 }
+
+/* Responsive table styles */
+@media (max-width: 768px) {
+  table td {
+    width: 100% !important;
+    display: block;
+    margin-bottom: 15px;
+  }
+}
 </style>
 
 <div class="bookmark-container">
@@ -101,8 +110,11 @@ html {
     <li><a href="#2-defining-baselines">2. Defining Baselines</a></li>
     <li><a href="#comparative-analysis">&nbsp;&nbsp;2a. Comp Analysis</a></li>
     <li><a href="#defining-user-base">&nbsp;&nbsp;2b. User Base</a></li>
+    <li><a href="#3-visioning-and-aligning-on-outcomes">3. Visioning</a></li>
+    <li><a href="#4-design-test-launch-and-iterate">4. Design & Test</a></li>
   </ul>
 </div>
+
 
 <script>
 // Add IDs to headlines for anchor links
@@ -176,8 +188,6 @@ I played a pivotal part in redesigning our 4 mobile applications:
 - Golf Galaxy - iOS
 - Golf Galaxy - Android
 
----
-
 ### Performance Metrics
 
 #### As of 2022 (YoY)
@@ -188,7 +198,7 @@ I played a pivotal part in redesigning our 4 mobile applications:
 - CVR rate 4.41%
 - Sign-in rate 94.4%
 
----
+<br>
 
 ## Overview
 
@@ -211,7 +221,7 @@ I played a pivotal part in redesigning our 4 mobile applications:
 - Managing multiple brands & platforms
 - Limited resources & tight deadlines
 
----
+<br>
 
 ## Design Process
 1. Understanding current states
@@ -239,7 +249,7 @@ I broke down the shopping journeys of users in our existing ecommerce section of
 
 ![App User Flow](/img/app-user-flow.jpg)
 
----
+<br>
 
 #### Service Blueprints
 ![App Service Blueprint](/img/app-service-blueprint.jpg)
@@ -253,13 +263,13 @@ This version of the blueprint contained:
 - back-end service calls
 - teams & stakeholders responsible
 
----
+<br>
 
 #### Identifying Stakeholders
 ![App Stakeholder Mapping](/img/app-stakeholder-map.jpg)
 Understanding who else shares the piece of the pie is important, as products aren't made in silos. The mobile app was a special case, because the business hadn't invested much into them. However, once we asked our immediate stakeholders, it seemed like everyone had some say in what happens with and within the app.
 
----
+<br>
 
 #### Current State Summary
 The then-current state of the mobile apps was a hodgepodge of native and web experiences. Poorly-managed hybrid experiences often led users to many UX pitfalls. There wasn't a single fully-native experience flow in the mobile apps and thus left users frustrated and reluctant to come back.
@@ -269,12 +279,9 @@ The then-current state of the mobile apps was a hodgepodge of native and web exp
 TL;DR: The app was basically a mobile website wrapped in a native app!
 
 ```
-
----
-
 Let's take a deeper dive into the issues and areas of opportunities.
 
----
+<br>
 
 #### Web Wrapper Limitations
 <table style="background: none;">
@@ -294,8 +301,7 @@ Let's take a deeper dive into the issues and areas of opportunities.
     </td>
   </tr>
 </table>
-
----
+<br>
 
 #### Lack of IA Structure
 <table style="background: none;">
@@ -325,6 +331,8 @@ We went in depth into which native device features such as cameras and voice int
 
 In addition to features, we compared the views step by step for all of our competitors to ensure we weren't forgetting any features during every step of the shopping journey for our users.
 
+<br>
+
 #### Comparative Analysis
 ![Competitive Analysis 1](/img/competitive-analysis-on-native1.png)
 *(Above) Identifying common features and patterns helped us to establish a clear baseline for a native shopping app*
@@ -335,7 +343,9 @@ In addition to features, we compared the views step by step for all of our compe
 ![Competitive Analysis 3](/img/competitive-analysis-on-native3.png)
 *(Above) User flows and general IA comparisons*
 
----
+After looking at enough flows and views, you start to see a general pattern and rough outline of a shopping flow. Comfortable and familiar shopping flow should be what we aim for. 
+
+<br>
 
 #### Defining User Base
 
@@ -358,6 +368,86 @@ Understanding the current userbase helped us consider which other competitors to
 ---
 
 ### 3. Visioning and aligning on outcomes
+
+After a rough outline of a shopping user flow has been defined, we put screens to each step of the flow and presented out our research findings to the business.
+
+We presented out a shopping journey that we thought painted a good picture of where we should aim to be to stay competitive in the market. We needed to remind the business that the release/rollout wouldn't be immediate but that the updates would come in large chunks, followed by smaller updates.
+
+Updating a product in chunks keeps user-facing changes minimal and gives users ample time to adjust to the changes and lowers barriers to entry to the updates. 
+
+---
+
+### 4. Design, Test, Launch, and Iterate
+This is when we iterated on the designs previously showcased to our stakeholders. After many design critique, jam, and brainstorming sessions, we landed on design we were comfortable with continuing with.
+
+We created high-fidelity tappable prototypes via Figma to user test our MVP designs. We conducted an unmoderated user test via User Testing, and asked the test participants to carry on shopping-related tasks on their phones:
+
+1. Searching for a product
+2. Accessing product information
+3. Adding product(s) to cart
+4. Checking out
+5. Finding order information/history
+
+![Pre-Release User Test](/img/pre-release-ut.pdf)
+*After conducting the user test, we gather the results and synthesize them accordingly*
+
+We tested with 30 iOS users and 30 Android users to ensure our high-level flows followed common mobile app shopping patterns that the industry had established.
+![Pre-Release User Test Results](/img/pre-release-ut-result.png)
+It wasn't anything super fancy, but it was honest work, and our test participants approved of our newly designed experiences.It felt relieving to have our designs validated.
+
+<br>
+
+#### Launch and Iterate
+
+When the development was done, the whole team spent weeks to test our end-to-end experiences. We caught many bugs along the way, but squashed 99% of them and de-prioritized the remainder for another sprint post-MVP.
+
+Ever since that launch, we've been continuously monitoring and making improvements to our apps to this day.
+
+---
+
+## Before and Afters
+Here are some of the main views that have been newly designed and pushed to production, and their older versions for comparison.
+
+### Main Landing View
+
+#### Revamped Global IA
+Original hybrid app consisted of many nested experiences inside one hamburger menu. We dedicated a few bottom navigation tabs for some of our major experiences to flatten the IA and give ample real estate for users to complete tasks in their dedicated spaces.
+
+#### Hero Component Wins
+Our websites always served up a large hero image for marketing and advertisement purposes. Defining and cleaning up the main landing view of our apps gave us room to keep the omni-experience consistent.
+
+#### Increased Speed to Product
+Instead of relying only on the search bar to help users get to products, we took our taxonomy up-front and center.
+
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+  <tr>
+    <td style="width: 50%; padding: 20px; vertical-align: center; text-align: center; border-bottom: none;">
+      <img src="/img/old-home.png" alt="Old Home Design" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: none;">
+      <p style="margin-top: 10px; font-style: italic; color: #666;">Before: Original hybrid app design</p>
+    </td>
+    <td style="width: 50%; padding: 20px; vertical-align: center; text-align: center; border-bottom: none;">
+      <img src="/img/new-home.png" alt="New Home Design" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: none;">
+      <p style="margin-top: 10px; font-style: italic; color: #666;">After: Revamped main landing view</p>
+    </td>
+  </tr>
+</table>
+
+---
+
+### Takeaways
+
+Looking back at this enormous project, I learned how to translate desktop/web experiences to native mobile ones. Inherently, desktop experiences have to be different because they're presented and interacted with differently by users.
+
+Interactive vs non-interactive elements, tappable areas, native iconography,  device nuances, SDK patterns, and etc. There were countless differences we had to consider, whilst maintaining the same back-end services as that of our desktop experiences.
+
+I also learned to leverage people for existing knowledge. Countless side chats, DM's and meetings were had in order for me to understand what they knew about their respective spaces. Communication is key... but really.
+
+Managing expectations with stakeholders and educating them wherever necessary. Not everyone in the company is as tech-savvy as us in tech. This is one of the first lessons I learned a while back, and put to action while interacting with business and marketing folks that were involved in this journey. I made sure to simplify discussions so anyone and everyone could understand what was being discussed.
+
+Understanding code and knowing how to effectively communicate with engineering helped me immensely throughout all my projects. Effective communication is helpful in any setting, but in tech, especially between engineering and other disciplines, is an underestimated skillset. Being able to talk the same 'language' as engineers/developers makes a world of a difference when talking design-to-code (for super obvious reasons).
+
+
+
 
 
 > **Note:** This case study is currently under construction. But I have a case study presentation deck that I can share. Please feel free to contact me for it!
