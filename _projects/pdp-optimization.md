@@ -343,7 +343,7 @@ Designers are often asked to cut back on designs, and I feel like its a constant
 
 I learned first-hand (again!) that there is truth in the popular psychological phenomena, Aesthetic-Usability Effect that basically says "what looks better, works better". Of course, this phenomena can't and shouldn't be attributed too heavily in the project's success, as the obvious IA restructuring and product imagery enhancements have made the biggest impacts. However, to most of our users, it probably was a minor update that largely went unnoticed. But the numbers don't lie!
 
-The realities of being understaffed with ever-rising expectations of deliverables by the business, we were/are not able to dig further into the results and conduct additional refinements. But had we the time, we would dig into usage metrics at a component level for the entirety of the PDP and set a baseline, and begin iterating on the components to net the best results. 
+The realities of being understaffed with ever-rising expectations of deliverables by the business, we were/are not able to dig further into the results and conduct additional refinements. But had we the time, we would dig into usage metrics at a component level for the entirety of the PDP and set a baseline, and begin iterating on the components to net the best results.
 
 <script>
 // Generate IDs for headlines and update bookmark links

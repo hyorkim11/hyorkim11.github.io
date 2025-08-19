@@ -12,13 +12,14 @@ permalink: /about/
 
 # About Me
 
-I studied computer science during my early years in undergrad. I realized how amazingly fun software development was; however, there was only so much a developer can do in creating awesome software for people. I then found UX Design at the intersection of software development and design, aimed to becoming the champion of the users. I instantly fell in love with everything the field stood for.
+I strive to search for new technologies to learn and adopt to my everyday toolbox. Rather than relying on off-the-shelf portfolio templates, I built this portfolio myself using CursorAI–because I love exploring new technologies and applying them to real, practical use cases. For me, design isn't just about aesthetics; it's about understanding how things work, building them, and improving everyday workflows.
 
-Understanding the users is the best way to create better experiences for them. Now I'm a Product Designer that thrives within highly functional and collaborative teams in that intersection between code-writing magicians and our users.
+I started out studying computer science, completely fascinated by how software gets built. But as much as I loved writing code, I realized something was missing–building software wasn't just about making it <i>work</i>; it was about making it <i>work for people</i>. That's when I discovered UX design, sitting right at the intersection of development and human experience. I was hooked.
 
-I aspire to design digital experiences that people don't frown nor raise their eyebrows at. Good UX is taken for granted, but bad UX is remembered. If users can't say much about the experiences I design, then I've done the minimum.
+Today, I'm a Product Designer who thrives in highly collaborative teams, translating complex ideas into experiences that feel effortless. I love working alongside engineers to bridge the gap betwen technical possibility and what users truly need.
 
-<i>In case you're wondering why I move portfolios so many times... I like to try new development stacks/languages. I've tried full python, html/css/js, pre-built portfolio services, and now... back to ye good ol' free static github allowance site. This one is using markdown and Jekyll! Seems super rudimentary so the UI is very... simplified.</i>
+I believe great design often goes unnoticed–because when an experience just works, people don't stop to think about it. My goal is to craft digital products so intuitive and seamless that no one raises an eyebrow... nor needs to!
+
 
 ---
 

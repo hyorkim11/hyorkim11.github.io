@@ -12,10 +12,7 @@ permalink: /portfolio/
 
 # Works
 
-A collection of my UX/UI design projects and case studies
-
----
-
+A collection of my case studies and various projects
 
 <table width="100%" cellspacing="16">
   <tr>
