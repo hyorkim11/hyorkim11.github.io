@@ -4,75 +4,70 @@ title: Welcome
 ---
 
 <style>
-@keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.animated-hero {
-  background: linear-gradient(-45deg, #f8fafc, #e2e8f0, #cbd5e1, #94a3b8);
-  background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
-  color: #1e293b;
-  padding: 140px 24px 100px;
-  margin: -80px calc(-50vw + 50%) 0;
+/* Hero Section */
+.hero-section {
+  background-image: url('{{ "/img/hero.png" | relative_url }}');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  aspect-ratio: 16 / 9;
   width: 100vw;
+  height: auto;
+  min-height: 60vh;
+  max-height: 80vh;
   position: relative;
+  margin: -80px 0 0;
   left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  text-align: center;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  box-sizing: border-box;
 }
 
-.animated-hero::before {
+.hero-section::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(148, 163, 184, 0.1), rgba(226, 232, 240, 0.1));
   pointer-events: none;
 }
 
-.animated-hero h1 {
-  font-size: 4rem;
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 0 24px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   margin-bottom: 1.5rem;
-  position: relative;
-  z-index: 1;
   letter-spacing: -0.02em;
-  text-align: center;
 }
 
-.animated-hero h2 {
-  font-size: 2.25rem;
+.hero-content h2 {
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
   font-weight: 500;
   margin-bottom: 2rem;
-  position: relative;
-  z-index: 1;
-  color: #475569;
+  opacity: 0.9;
   letter-spacing: -0.01em;
-  text-align: center;
 }
 
-.animated-hero p {
-  font-size: 1.375rem;
+.hero-content p {
+  font-size: clamp(1rem, 3vw, 1.375rem);
   line-height: 1.6;
-  max-width: 700px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-  color: #64748b;
+  opacity: 0.9;
   font-weight: 400;
-  text-align: center;
 }
 
-/* Center all landing page content */
+/* Landing Content */
 .landing-content {
   text-align: center;
   max-width: 800px;
@@ -80,11 +75,9 @@ title: Welcome
   padding: 0 24px;
 }
 
-.landing-content h2 {
-  text-align: center;
-}
-
-.landing-content p {
+.landing-content h2,
+.landing-content p,
+.landing-content strong {
   text-align: center;
 }
 
@@ -96,105 +89,40 @@ title: Welcome
   text-align: center;
 }
 
-.landing-content strong {
-  text-align: center;
-}
-
-.markdown-content, .container {
-  max-width: 800px;
-}
-
-/* Add some breathing room after the hero */
+/* Spacing */
 .hero-spacer {
   height: 60px;
 }
 
-.skills-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
 
-.skills-table th {
-  background: #f8fafc;
-  color: #1e293b;
-  font-weight: 600;
-  padding: 1.5rem 1rem;
-  text-align: center;
-  border-bottom: 2px solid #e2e8f0;
-  font-size: 1.1rem;
-  letter-spacing: -0.01em;
-}
 
-.skills-table td {
-  padding: 1.5rem 1rem;
-  text-align: center;
-  border-bottom: 1px solid #f1f5f9;
-  color: #475569;
-  line-height: 1.6;
-}
-
-.skills-table tr:last-child td {
-  border-bottom: none;
-}
-
-.skills-table td ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skills-table td li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #f8fafc;
-}
-
-.skills-table td li:last-child {
-  border-bottom: none;
-}
-
-/* Responsive breakpoints matching site standards */
+/* Responsive Design */
 @media (max-width: 1024px) {
-  .skills-table th,
-  .skills-table td {
-    padding: 1.25rem 0.75rem;
-    font-size: 0.95rem;
+  .hero-section {
+    background-attachment: scroll;
+    aspect-ratio: 16 / 10;
   }
 }
 
 @media (max-width: 768px) {
-  .skills-table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  
-  .skills-table th,
-  .skills-table td {
-    padding: 1rem 0.5rem;
-    font-size: 0.9rem;
-    min-width: 120px;
+  .hero-section {
+    aspect-ratio: 4 / 3;
+    min-height: 50vh;
   }
 }
 
 @media (max-width: 480px) {
-  .skills-table th,
-  .skills-table td {
-    padding: 0.75rem 0.25rem;
-    font-size: 0.85rem;
-    min-width: 100px;
+  .hero-section {
+    background-image: url('{{ "/img/hero-sm.png" | relative_url }}');
+    aspect-ratio: 1 / 2;
+    min-height: 60vh;
   }
 }
 </style>
 
-<div class="animated-hero">
-  <h1>Hi there!</h1>
-  <h2>My name is Josh Kim.</h2>
-  <p>I am a Product Designer passionate about creating familiar & comfortable experiences.</p>
+<div class="hero-section">
+  <div class="hero-content">
+  </div>
 </div>
 
 <div class="hero-spacer"></div>
@@ -245,13 +173,6 @@ Recent production releases in the Dick's Mobile App world:
       <strong>Mobile App Redesign</strong><br/>
       Rebuilding apps natively to garner over 3M MAU in just 3 years after relaunch.
     </td>
-    <!-- <td align="center" valign="top" width="33%">
-      <a href="/projects/promo-engine/">
-        <img src="/img/design-system.png" alt="Design systems" style="width:100%; max-width:200px; border-radius:8px; object-fit:cover; object-position:center; margin-bottom:0.25em;" />
-      </a>
-      <strong>Design Systems</strong><br/>
-      Empowering design and engineering to work faster and more efficiently.
-    </td> -->
   </tr>
   <tr>
     <td align="center" valign="top" width="33%">
@@ -277,64 +198,44 @@ Recent production releases in the Dick's Mobile App world:
     </td>
   </tr>
 </table>
-</div>
 ---
 
 ## Skills
 
-wow this part is really killin me with trying to make a visually scannable column/list! markdown poses some real limitations huh?!
 
-**Research**  
-User Interviews, Surveys, Requirements Gathering, Needs Assessment, Comparative Analysis, System Mapping, Journey Mapping, Sketching & Prototyping, A/B Testing, Heuristic Evaluation
 
-**Design**  
-Sketching & Wireframing, Prototyping, Web & Mobile, Design Systems, UI Design
+### Research
+User Interviews<br>
+Surveys<br>
+Requirements Gathering<br>
+Needs Assessment<br>
+Comparative Analysis<br>
+System Mapping<br>
+Journey Mapping<br>
+Sketching & Prototyping<br>
+A/B Testing<br>
+Heuristic Evaluation <br>
 
-**Software**  
-Figma, Sketch, Adobe Suite, UserTesting, Github, Miro, Atlassian(Jira & Confluence)
+### Design
+Sketching & Wireframing<br>
+Prototyping<br>
+Web & Mobile<br>
+Design Systems<br>
+UI Design <br>
 
-**Programming**  
-Python • HTML/CSS • Javascript • C, C++ • PHP/MySQL • Java
+### Software
+Figma<br>
+Sketch<br>
+Adobe Suite<br>
+UserTesting<br>
+GitHub<br>
+Miro<br>
+Atlassian (Jira & Confluence) <br>
 
----
-## Skillz
-
-<div style="
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-">
-
-  <div>
-    <strong>Research</strong><br>
-    • User Interviews<br>
-    • Surveys<br>
-    • A/B Testing<br>
-    • Journey Mapping
-  </div>
-
-  <div>
-    <strong>Design</strong><br>
-    • Wireframing<br>
-    • Prototyping<br>
-    • UI Design<br>
-    • Design Systems
-  </div>
-
-  <div>
-    <strong>Software</strong><br>
-    • Figma<br>
-    • Sketch<br>
-    • Miro<br>
-    • GitHub
-  </div>
-
-  <div>
-    <strong>Programming</strong><br>
-    • Python<br>
-    • HTML/CSS<br>
-    • JavaScript<br>
-    • Java
-  </div>
-
-</div>
+### Programming
+Python<br>
+HTML/CSS<br>
+JavaScript<br>
+C, C++<br>
+PHP/MySQL<br>
+Java <br>
